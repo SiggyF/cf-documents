@@ -748,7 +748,7 @@ List of Examples
 <a href="#id2871773">
 Use of 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 </a>
 </dt>
@@ -1077,7 +1077,7 @@ CF conforming files; email list for discussion
 about interpretation, clarification, and proposals
 for changes or extensions to the current conventions.
 <span class="link-external">
-<a class="ulink" href="http://www-pcmdi.llnl.gov/cf/" target="_top">
+<a class="ulink" href="http://www-pcmdi.llnl.gov/cf/" target="&#95;top">
 http://www-pcmdi.llnl.gov/cf/
 </a>
 </span>
@@ -1092,7 +1092,7 @@ Revision history:
 <p>
 This document will be updated to reflect agreed changes to 
 the standard and to correct mistakes according to the rules of 
-<a class="ulink" href="http://cf-pcmdi.llnl.gov/governance" target="_top">
+<a class="ulink" href="http://cf-pcmdi.llnl.gov/governance" target="&#95;top">
 CF governance
 </a>
 .
@@ -1351,7 +1351,7 @@ the array, it is the last declared dimension that is the fastest
 varying in terms of file storage order. The netCDF utilities ncdump
 and ncgen use this format (see 
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-15.html#HEADING15-0" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-15.html#HEADING15-0" target="&#95;top">
 chapter 10 of the NUG
 </a>
 </span>
@@ -1384,7 +1384,7 @@ coordinate variable
 <p>
 We use this term precisely as it is defined in section 
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-7.html#HEADING7-67" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-7.html#HEADING7-67" target="&#95;top">
 2.3.1 of the NUG
 </a>
 </span>
@@ -1589,11 +1589,11 @@ units
 </code>
 ,
 <code class="varname">
-long_name
+long&#95;name
 </code>
 , and
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 . The
 <code class="varname">
@@ -1602,11 +1602,11 @@ units
 ,
 and 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 attributes are defined in the NUG and the
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute is
 defined in this document.
@@ -1646,11 +1646,11 @@ Section&nbsp;3.1, “Units”
 <p>
 The 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 and 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attributes are
 used to describe the content of each variable. For
@@ -1765,11 +1765,11 @@ located with respect to a point on the earth's
 surface. The definitions are associated with
 a coordinate variable via the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 and 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attributes. For backwards
 compatibility with COARDS use of these attributes
@@ -1789,7 +1789,7 @@ data that is representative of cells can be
 described by simple statistical methods, those
 methods can be indicated using the 
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute. An important application of this
 attribute is to describe climatological and
@@ -1802,11 +1802,11 @@ reduces the data volume by reducing the precision
 of the stored numbers. It is implemented using
 the attributes 
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 and 
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 which
 are defined in the NUG. Compression on the other
@@ -1905,14 +1905,14 @@ to allow (but do not require) the
 units
 </code>
 attribute of dimensionless vertical coordinates to take the
-values "level", "layer", or "sigma_level." But we
+values "level", "layer", or "sigma&#95;level." But we
 recommend that the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 and 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attributes be used to identify the appropriate
 definition of the dimensionless vertical
@@ -2171,16 +2171,16 @@ type as unsigned by using the
 NUG convention of indicating the unsigned range
 using the 
 <code class="varname">
-valid_min
+valid&#95;min
 </code>
 , 
 <code class="varname">
-valid_max
+valid&#95;max
 </code>
 , 
 or 
 <code class="varname">
-valid_range
+valid&#95;range
 </code>
 attributes.
 </p>
@@ -2191,7 +2191,7 @@ arrays. In this document, a one dimensional array
 of character data is simply referred to as a
 "string". An n-dimensional array of strings
 must be implemented as a character array of
-dimension (n,max_string_length), with the last
+dimension (n,max&#95;string&#95;length), with the last
 (most rapidly varying) dimension declared large
 enough to contain the longest string in the
 array. All the strings in a given array are
@@ -2249,7 +2249,7 @@ to be in English. For example, a description
 of what a variable represents may be given
 in a non-English language using the 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 attribute 
 (see 
@@ -2260,7 +2260,7 @@ Section&nbsp;3.2, “Long Name”
 whose contents are not standardized, but a description given by
 the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute 
 (see 
@@ -2440,26 +2440,26 @@ multidimensional coordinate variables
 The NUG conventions 
 (
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG section 8.1
 </a>
 </span>
 )
 provide the 
 <code class="varname">
-_FillValue
+&#95;FillValue
 </code>
 , 
 <code class="varname">
-valid_min
+valid&#95;min
 </code>
 ,
 <code class="varname">
-valid_max
+valid&#95;max
 </code>
 , and 
 <code class="varname">
-valid_range
+valid&#95;range
 </code>
 attributes
 to indicate missing data.
@@ -2471,16 +2471,16 @@ changed significantly between version
 the NUG defines missing data as all
 values outside of the 
 <code class="varname">
-valid_range
+valid&#95;range
 </code>
 , 
 and specifies how the 
 <code class="varname">
-valid_range
+valid&#95;range
 </code>
 should be defined from the 
 <code class="varname">
-_FillValue
+&#95;FillValue
 </code>
 (which has
 library specified default values) if it
@@ -2490,7 +2490,7 @@ a variable then we strongly recommend
 that this value be specified using
 the 
 <code class="varname">
-_FillValue
+&#95;FillValue
 </code>
 attribute. Doing this guarantees that the missing value will
 be recognized by generic applications
@@ -2500,7 +2500,7 @@ version 2.4 conventions.
 <p>
 The scalar attribute with the name
 <code class="varname">
-_FillValue
+&#95;FillValue
 </code>
 and of the same type as its
 variable is recognized by the netCDF
@@ -2511,19 +2511,19 @@ that indicates undefined or missing data,
 and is returned when reading values that
 were not written. The 
 <code class="varname">
-_FillValue
+&#95;FillValue
 </code>
 should be
 outside the range specified by 
 <code class="varname">
-valid_range
+valid&#95;range
 </code>
 (if used) for a variable. The netCDF
 library defines a default fill value
 for each data type 
 (
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-12.html#HEADING12-1381" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-12.html#HEADING12-1381" target="&#95;top">
 NUG section 7.16
 </a>
 </span>
@@ -2532,7 +2532,7 @@ NUG section 7.16
 <p>
 The 
 <code class="varname">
-missing_value
+missing&#95;value
 </code>
 attribute is considered
 deprecated by the NUG and we do not
@@ -2540,18 +2540,18 @@ recommend its use. However for backwards
 compatibility with COARDS this standard
 continues to recognize the use of the
 <code class="varname">
-missing_value
+missing&#95;value
 </code>
 attribute to indicate undefined or missing data.
 </p>
 <p>
 The missing values of a variable with
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 and/or 
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 attributes
 (see section 
@@ -2575,7 +2575,7 @@ a transformation to it could result
 in an invalid operation. For example,
 the default 
 <code class="varname">
-_FillValue
+&#95;FillValue
 </code>
 is very close to
 the maximum representable value of IEEE
@@ -2688,7 +2688,7 @@ ftp.unidata.ucar.edu
 web based versions of this
 document are linked from the 
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/conventions.html" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/conventions.html" target="&#95;top">
 netCDF Conventions web page
 </a>
 </span>
@@ -2932,13 +2932,13 @@ units
 </code>
 and 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 attributes
 as defined in COARDS. We extend COARDS by adding the
 optional 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute which is used to provide
 unique identifiers for variables. This is important for
@@ -2949,7 +2949,7 @@ the institution that provided the data.
 <p>
 The 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute can
 be used to identify variables that contain coordinate
@@ -3002,7 +3002,7 @@ UDUNITS
 with a few exceptions that are given below. 
 The 
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="&#95;top">
 Udunits package
 </a>
 </span>
@@ -3053,11 +3053,11 @@ percent
 </code>
 , but is lacking commonly used units such as ppm (parts per million). This convention does not support the addition of new dimensionless units that are not udunits compatible. The conforming unit for quantities that represent fractions, or parts of a whole, is "1". The conforming unit for parts per million is "1e-6". Descriptive information about dimensionless quantities, such as sea-ice concentration, cloud fraction, probability, etc., should be given in the 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 or 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attributes (see below) rather than the 
 <code class="varname">
@@ -3076,7 +3076,7 @@ layer
 </code>
 , and 
 <code class="constant">
-sigma_level
+sigma&#95;level
 </code>
 are allowed for dimensionless vertical coordinates to maintain backwards compatibility with COARDS. These units are not compatible with Udunits and are deprecated by this standard because conventions for more precisely identifying dimensionless vertical coordinates are introduced (see 
 <a class="xref" href="#dimensionless-vertical-coordinate" title="4.3.2.&nbsp;Dimensionless Vertical Coordinate">
@@ -3089,11 +3089,11 @@ The Udunits syntax that allows scale factors and offsets to be applied to
 a unit is not supported by this standard. The application of any scale 
 factors or offsets to data should be indicated by the 
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 and 
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 attributes. Use of these attributes for data packing, 
 which is their most important application, 
@@ -3404,19 +3404,19 @@ y
 <p>
 The 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 attribute is defined by the NUG to contain a long descriptive name which may, for example, be used for labeling plots. For backwards compatibility with COARDS this attribute is optional. But it is highly recommended that either this or the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute defined in the next section be provided to make the file self-describing. If a variable has no 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 attribute then an application may use, as a default, the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 if it exists, or the variable name itself.
 </p>
@@ -3436,18 +3436,18 @@ if it exists, or the variable name itself.
 <p>
 A fundamental requirement for exchange of scientific data is the ability to describe precisely the physical quantities being represented. To some extent this is the role of the 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 attribute as defined in the NUG. However, usage of 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 is completely ad-hoc. For some applications it would be desirable to have a more definitive description of the quantity, which would allow users of data from different sources to determine whether quantities were in fact comparable. For this reason an optional mechanism for uniquely associating each variable with a standard name is provided.
 </p>
 <p>
 A standard name is associated with a variable via the attribute 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 which takes a string value comprised of a standard name optionally followed by one or more blanks and a standard name modifier (a string value from 
 <a class="xref" href="#standard-name-modifiers" title="Appendix&nbsp;C.&nbsp;Standard Name Modifiers">
@@ -3482,7 +3482,7 @@ canonical units
 <p>
 Representative units of the physical quantity. Unless it is dimensionless, a variable with a 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute must have units which are physically equivalent (not necessarily identical) to the canonical units, possibly modified by an operation specified by either the standard name modifier (see below and 
 <a class="xref" href="#standard-name-modifiers" title="Appendix&nbsp;C.&nbsp;Standard Name Modifiers">
@@ -3493,7 +3493,7 @@ Standard Name Modifiers
 </a>
 ) or by the 
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute (see 
 <a class="xref" href="#cell-methods" title="7.3.&nbsp;Cell Methods">
@@ -3526,7 +3526,7 @@ When appropriate, the table entry also contains the corresponding GRIB parameter
 </p>
 <p>
 The standard name table is located at 
-<a class="ulink" href="http://cf-pcmdi.llnl.gov/documents/cf-standard-names/current/cf-standard-name-table.xml" target="_top">
+<a class="ulink" href="http://cf-pcmdi.llnl.gov/documents/cf-standard-names/current/cf-standard-name-table.xml" target="&#95;top">
 http://cf-pcmdi.llnl.gov/documents/cf-standard-names/current/cf-standard-name-table.xml
 </a>
 , written in compliance with the XML format, as described in 
@@ -3540,7 +3540,7 @@ Standard Name Table Format
 Knowledge of the XML format is only necessary for application 
 writers who plan to directly access the table. A formatted text 
 version of the table is provided at 
-<a class="ulink" href="http://cf-pcmdi.llnl.gov/documents/cf-standard-names/current/cf-standard-name-table.html" target="_top">
+<a class="ulink" href="http://cf-pcmdi.llnl.gov/documents/cf-standard-names/current/cf-standard-name-table.html" target="&#95;top">
 http://cf-pcmdi.llnl.gov/documents/cf-standard-names/current/cf-standard-name-table.html
 </a>
 , and this table may be consulted in order to find the standard 
@@ -3549,7 +3549,7 @@ name that should be assigned to a variable.
 <p>
 Standard names by themselves are not always sufficient to describe a quantity. For example, a variable may contain data to which spatial or temporal operations have been applied. Or the data may represent an uncertainty in the measurement of a quantity. These quantity attributes are expressed as modifiers of the standard name. Modifications due to common statistical operations are expressed via the 
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute (see 
 <a class="xref" href="#cell-methods" title="7.3.&nbsp;Cell Methods">
@@ -3564,7 +3564,7 @@ Cell Methods
 </a>
 ). Other types of quantity modifiers are expressed using the optional modifier part of the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute. The permissible values of these modifiers are given in 
 <a class="xref" href="#standard-name-modifiers" title="Appendix&nbsp;C.&nbsp;Standard Name Modifiers">
@@ -3582,21 +3582,21 @@ Standard Name Modifiers
 <b>
 Example&nbsp;3.1.&nbsp;Use of 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 </b>
 </p>
 <div class="example-contents">
 <pre class="programlisting">
 float psl(lat,lon) ;
-psl:long_name = "mean sea level pressure" ;
+psl:long&#95;name = "mean sea level pressure" ;
 psl:units = "hPa" ;
-psl:standard_name = "air_pressure_at_sea_level" ;
+psl:standard&#95;name = "air&#95;pressure&#95;at&#95;sea&#95;level" ;
 </pre>
 <p>
 The description in the standard name table entry for 
 <code class="varname">
-air_pressure_at_sea_level
+air&#95;pressure&#95;at&#95;sea&#95;level
 </code>
 clarifies that "sea level" refers to the mean sea level, which is close to the geoid in sea areas.
 </p>
@@ -3606,19 +3606,19 @@ clarifies that "sea level" refers to the mean sea level, which is close to the g
 <p>
 Here are lists of equivalences between the CF standard names and the standard names from the 
 <span class="link-external">
-<a class="ulink" href="http://www.cgd.ucar.edu/cms/eaton/cf-metadata/ECMWF.html" target="_top">
+<a class="ulink" href="http://www.cgd.ucar.edu/cms/eaton/cf-metadata/ECMWF.html" target="&#95;top">
 ECMWF GRIB tables
 </a>
 </span>
 ,  the 
 <span class="link-external">
-<a class="ulink" href="http://www.cgd.ucar.edu/cms/eaton/cf-metadata/NCEP.html" target="_top">
+<a class="ulink" href="http://www.cgd.ucar.edu/cms/eaton/cf-metadata/NCEP.html" target="&#95;top">
 NCEP GRIB tables
 </a>
 </span>
 , and the 
 <span class="link-external">
-<a class="ulink" href="http://www.cgd.ucar.edu/cms/eaton/cf-metadata/PCMDI.html" target="_top">
+<a class="ulink" href="http://www.cgd.ucar.edu/cms/eaton/cf-metadata/PCMDI.html" target="&#95;top">
 PCMDI tables
 </a>
 </span>
@@ -3640,15 +3640,15 @@ PCMDI tables
 <p>
 When one data variable provides metadata about the individual values of another data variable it may be desirable to express this association by providing a link between the variables. For example, instrument data may have associated measures of uncertainty. The attribute 
 <code class="varname">
-ancillary_variables
+ancillary&#95;variables
 </code>
 is used to express these types of relationships. It is a string attribute whose value is a blank separated list of variable names. The nature of the relationship between variables associated via 
 <code class="varname">
-ancillary_variables
+ancillary&#95;variables
 </code>
 must be determined by other attributes. The variables listed by the 
 <code class="varname">
-ancillary_variables
+ancillary&#95;variables
 </code>
 attribute will often have the standard name of the variable which points to them including a modifier (
 <a class="xref" href="#standard-name-modifiers" title="Appendix&nbsp;C.&nbsp;Standard Name Modifiers">
@@ -3670,15 +3670,15 @@ Example&nbsp;3.2.&nbsp;Instrument data
 <div class="example-contents">
 <pre class="programlisting">
 float q(time) ;
-q:standard_name = "specific_humidity" ;
+q:standard&#95;name = "specific&#95;humidity" ;
 q:units = "g/g" ;
-q:ancillary_variables = "q_error_limit q_detection_limit" ;
-float q_error_limit(time)
-q_error_limit:standard_name = "specific_humidity standard_error" ;
-q_error_limit:units = "g/g" ;
-float q_detection_limit(time)
-q_detection_limit:standard_name = "specific_humidity detection_minimum" ;
-q_detection_limit:units = "g/g" ;
+q:ancillary&#95;variables = "q&#95;error&#95;limit q&#95;detection&#95;limit" ;
+float q&#95;error&#95;limit(time)
+q&#95;error&#95;limit:standard&#95;name = "specific&#95;humidity standard&#95;error" ;
+q&#95;error&#95;limit:units = "g/g" ;
+float q&#95;detection&#95;limit(time)
+q&#95;detection&#95;limit:standard&#95;name = "specific&#95;humidity detection&#95;minimum" ;
+q&#95;detection&#95;limit:units = "g/g" ;
 </pre>
 </div>
 </div>
@@ -3699,19 +3699,19 @@ q_detection_limit:units = "g/g" ;
 <p>
 The attributes 
 <code class="varname">
-flag_values
+flag&#95;values
 </code>
 and 
 <code class="varname">
-flag_meanings
+flag&#95;meanings
 </code>
 are intended to make variables that contain flag values self describing. The 
 <code class="varname">
-flag_values
+flag&#95;values
 </code>
 attribute is the same type as the variable to which it is attached, and contains a list of the possible flag values. The 
 <code class="varname">
-flag_meanings
+flag&#95;meanings
 </code>
 attribute is a string whose value is a blank separated list of descriptive words or phrases, one for each flag value. If multi-word phrases are used to describe the flag values, then the words within a phrase should be connected with underscores.
 </p>
@@ -3725,13 +3725,13 @@ Example&nbsp;3.3.&nbsp;A flag variable
 </p>
 <div class="example-contents">
 <pre class="programlisting">
-byte current_speed_qc(time, depth, lat, lon) ;
-current_speed_qc:long_name = "Current Speed Quality" ;
-current_speed_qc:_FillValue = -128b ;
-current_speed_qc:valid_range = -127b, 127b ;
-current_speed_qc:flag_values = 0b, 1b, 2b ;
-current_speed_qc:flag_meanings = "quality_good sensor_nonfunctional 
-outside_valid_range" ;
+byte current&#95;speed&#95;qc(time, depth, lat, lon) ;
+current&#95;speed&#95;qc:long&#95;name = "Current Speed Quality" ;
+current&#95;speed&#95;qc:&#95;FillValue = -128b ;
+current&#95;speed&#95;qc:valid&#95;range = -127b, 127b ;
+current&#95;speed&#95;qc:flag&#95;values = 0b, 1b, 2b ;
+current&#95;speed&#95;qc:flag&#95;meanings = "quality&#95;good sensor&#95;nonfunctional 
+outside&#95;valid&#95;range" ;
 </pre>
 </div>
 </div>
@@ -3834,11 +3834,11 @@ We extend COARDS by providing explicit definitions of dimensionless
 vertical coordinates. The definitions are associated with a coordinate
 variable via the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 and
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attributes. For backwards compatibility
 with COARDS use of these attributes is not required, but is strongly recommended.
@@ -3879,7 +3879,7 @@ which stand for a longitude,
 latitude, vertical, or time axis respectively.
 Alternatively the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute may be used
 for direct identification. But note that these optional
@@ -3978,7 +3978,7 @@ units
 attribute will be a string formatted
 as per the
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="&#95;top">
 <code class="filename">
 udunits.dat
 </code>
@@ -3988,20 +3988,20 @@ file.
 The recommended unit of latitude
 is 
 <code class="varname">
-degrees_north
+degrees&#95;north
 </code>
 . Also acceptable 
 are 
 <code class="varname">
-degree_north
+degree&#95;north
 </code>
 , 
 <code class="varname">
-degree_N
+degree&#95;N
 </code>
 ,
 <code class="varname">
-degrees_N
+degrees&#95;N
 </code>
 , 
 <code class="varname">
@@ -4025,9 +4025,9 @@ Example&nbsp;4.1.&nbsp;Latitude axis
 <div class="example-contents">
 <pre class="programlisting">
 float lat(lat) ;
-lat:long_name = "latitude" ;
-lat:units = "degrees_north" ;
-lat:standard_name = "latitude" ;
+lat:long&#95;name = "latitude" ;
+lat:units = "degrees&#95;north" ;
+lat:standard&#95;name = "latitude" ;
 </pre>
 </div>
 </div>
@@ -4040,7 +4040,7 @@ to be pi/180 radians. Hence, determination that a coordinate is a
 latitude type should be done via a string match between the given unit
 and one of the acceptable forms of 
 <code class="varname">
-degrees_north
+degrees&#95;north
 </code>
 .
 </p>
@@ -4048,7 +4048,7 @@ degrees_north
 Optionally, the latitude type may be indicated additionally by providing
 the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute with the value
 <code class="varname">
@@ -4073,7 +4073,7 @@ degrees
 </code>
 , not 
 <code class="varname">
-degrees_north
+degrees&#95;north
 </code>
 or equivalents, because applications which use the units to identify
 axes would have no means of distinguishing such an axis from real
@@ -4084,11 +4084,11 @@ also not generally be appropriate to attach an axis attribute to a
 rotated-latitude coordinate variable. Such a variable can be identified
 by a 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 of 
 <code class="varname">
-grid_latitude
+grid&#95;latitude
 </code>
 .
 </span>
@@ -4120,7 +4120,7 @@ attribute
 will be a string formatted
 as per the
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="&#95;top">
 <code class="filename">
 udunits.dat
 </code>
@@ -4129,20 +4129,20 @@ udunits.dat
 file.
 The recommended unit of longitude is
 <code class="varname">
-degrees_east
+degrees&#95;east
 </code>
 . Also acceptable
 are 
 <code class="varname">
-degree_east
+degree&#95;east
 </code>
 , 
 <code class="varname">
-degree_E
+degree&#95;E
 </code>
 ,
 <code class="varname">
-degrees_E
+degrees&#95;E
 </code>
 ,  
 <code class="varname">
@@ -4166,9 +4166,9 @@ Example&nbsp;4.2.&nbsp;Longitude axis
 <div class="example-contents">
 <pre class="programlisting">
 float lon(lon) ;
-lon:long_name = "longitude" ;
-lon:units = "degrees_east" ;
-lon:standard_name = "longitude" ;
+lon:long&#95;name = "longitude" ;
+lon:units = "degrees&#95;east" ;
+lon:standard&#95;name = "longitude" ;
 </pre>
 </div>
 </div>
@@ -4178,19 +4178,19 @@ Application writers should note that the Udunits package has limited
 recognition of the directionality implied by the "east" part of the
 unit specification. It defines 
 <code class="varname">
-degrees_east
+degrees&#95;east
 </code>
 to be
 pi/180 radians, and hence equivalent to 
 <code class="varname">
-degrees_north
+degrees&#95;north
 </code>
 .
 We recommend the determination that a coordinate is a longitude type
 should be done via a string match between the given unit and one of the
 acceptable forms of 
 <code class="varname">
-degrees_east
+degrees&#95;east
 </code>
 .
 </p>
@@ -4198,7 +4198,7 @@ degrees_east
 Optionally, the longitude type may be indicated additionally by
 providing the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute with the
 value 
@@ -4223,7 +4223,7 @@ degrees
 </code>
 , not
 <code class="varname">
-degrees_east
+degrees&#95;east
 </code>
 or equivalents, because applications
 which use the units to identify axes would have no means of
@@ -4234,11 +4234,11 @@ It would also not generally be
 appropriate to attach an axis attribute to a rotated-longitude
 coordinate variable. Such a variable can be identified by a
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 of 
 <code class="varname">
-grid_longitude
+grid&#95;longitude
 </code>
 .
 </span>
@@ -4298,8 +4298,8 @@ the surface as 0 and the depth of 1000 meters as 1000 then the axis
 would use attributes as follows:
 </p>
 <pre class="programlisting">
-axis_name:units = "meters" ; 
-axis_name:positive = "down" ; 	
+axis&#95;name:units = "meters" ; 
+axis&#95;name:positive = "down" ; 	
 </pre>
 <p>
 </p>
@@ -4359,7 +4359,7 @@ down
 Optionally, the vertical type may be indicated additionally by
 providing the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute with an
 appropriate value, and/or the 
@@ -4393,7 +4393,7 @@ units
 attribute for dimensional coordinates will
 be a string formatted as per the
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="&#95;top">
 <code class="filename">
 udunits.dat
 </code>
@@ -4494,14 +4494,14 @@ layer
 </code>
 , or 
 <code class="varname">
-sigma_level
+sigma&#95;level
 </code>
 . These values are not recognized by the Udunits package, and are considered a deprecated feature in the CF standard.
 </p>
 <p>
 For dimensionless vertical coordinates we extend the COARDS standard by making use of the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute to associate a coordinate with its definition from 
 <a class="xref" href="#dimensionless-v-coord" title="Appendix&nbsp;D.&nbsp;Dimensionless Vertical Coordinates">
@@ -4512,7 +4512,7 @@ Dimensionless Vertical Coordinates
 </a>
 . The definition provides a mapping between the dimensionless coordinate values and dimensional values that can positively and uniquely indicate the location of the data. A new attribute, 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 , is used to associate terms in the definitions with variables in a netCDF file. To maintain backwards compatibility with COARDS the use of these attributes is not required, but is strongly recommended.
 </p>
@@ -4527,10 +4527,10 @@ Example&nbsp;4.3.&nbsp;Atmosphere sigma coordinate
 <div class="example-contents">
 <pre class="programlisting">
 float lev(lev) ;
-lev:long_name = "sigma at layer midpoints" ;
+lev:long&#95;name = "sigma at layer midpoints" ;
 lev:positive = "down" ;
-lev:standard_name = "atmosphere_sigma_coordinate" ;
-lev:formula_terms = "sigma: lev ps: PS ptop: PTOP" ;
+lev:standard&#95;name = "atmosphere&#95;sigma&#95;coordinate" ;
+lev:formula&#95;terms = "sigma: lev ps: PS ptop: PTOP" ;
 </pre>
 </div>
 </div>
@@ -4538,11 +4538,11 @@ lev:formula_terms = "sigma: lev ps: PS ptop: PTOP" ;
 <p>
 In this example the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 value 
 <code class="varname">
-atmosphere_sigma_coordinate
+atmosphere&#95;sigma&#95;coordinate
 </code>
 identifies the following definition from 
 <a class="xref" href="#standard-name-modifiers" title="Appendix&nbsp;C.&nbsp;Standard Name Modifiers">
@@ -4581,7 +4581,7 @@ p(n,k,j,i) = ptop + sigma(k)*(ps(n,j,i)-ptop)
 <p>
 The 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute associates the variable 
 <code class="varname">
@@ -4669,7 +4669,7 @@ and minutes).
 <p>
 The acceptable units for time are listed in the
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="&#95;top">
 <code class="filename">
 udunits.dat
 </code>
@@ -4732,19 +4732,19 @@ It is not a calendar year.
 </span>
 Udunits includes the following definitions for years: a 
 <code class="varname">
-common_year
+common&#95;year
 </code>
 is 365 days, a 
 <code class="varname">
-leap_year
+leap&#95;year
 </code>
 is 366 days, a 
 <code class="varname">
-Julian_year
+Julian&#95;year
 </code>
 is 365.25 days, and a 
 <code class="varname">
-Gregorian_year
+Gregorian&#95;year
 </code>
 is 365.2425 days.
 </p>
@@ -4755,7 +4755,7 @@ month
 </code>
 , which is defined in
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/software/udunits/" target="&#95;top">
 <code class="filename">
 udunits.dat
 </code>
@@ -4778,7 +4778,7 @@ Example&nbsp;4.4.&nbsp;Time axis
 <div class="example-contents">
 <pre class="programlisting">
 double time(time) ;
-time:long_name = "time" ;
+time:long&#95;name = "time" ;
 time:units = "days since 1990-1-1 0:0:0" ;
 </pre>
 </div>
@@ -4798,7 +4798,7 @@ can be used to make this determination.
 <p>
 Optionally, the time coordinate may be indicated additionally by providing the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute with an appropriate value, and/or the 
 <code class="varname">
@@ -4859,7 +4859,7 @@ This is the default.
 <dt>
 <span class="term">
 <code class="varname">
-proleptic_gregorian
+proleptic&#95;gregorian
 </code>
 </span>
 </dt>
@@ -4875,7 +4875,7 @@ noleap
 </code>
 or 
 <code class="varname">
-365_day
+365&#95;day
 </code>
 </span>
 </dt>
@@ -4887,11 +4887,11 @@ Gregorian calendar without leap years, i.e., all years are 365 days long.
 <dt>
 <span class="term">
 <code class="varname">
-all_leap
+all&#95;leap
 </code>
 or 
 <code class="varname">
-366_day
+366&#95;day
 </code>
 </span>
 </dt>
@@ -4903,7 +4903,7 @@ Gregorian calendar with every year being a leap year, i.e., all years are 366 da
 <dt>
 <span class="term">
 <code class="varname">
-360_day
+360&#95;day
 </code>
 </span>
 </dt>
@@ -4967,7 +4967,7 @@ Example&nbsp;4.5.&nbsp;Perpetual time axis
 <pre class="programlisting">
 variables:
 double time(time) ;
-time:long_name = "time" ;
+time:long&#95;name = "time" ;
 time:units = "days since 1-7-15 0:0:0" ;
 time:calendar = "none" ;
 data:
@@ -4982,7 +4982,7 @@ Here, all days simulate the conditions of 15th July, so it does not make sense t
 <p>
 If none of the calendars defined above applies (e.g., calendars appropriate to a different paleoclimate era), a non-standard calendar can be defined. The lengths of each month are explicitly defined with the 
 <code class="varname">
-month_lengths
+month&#95;lengths
 </code>
 attribute of the time axis: 
 </p>
@@ -4991,7 +4991,7 @@ attribute of the time axis:
 <dt>
 <span class="term">
 <code class="varname">
-month_lengths
+month&#95;lengths
 </code>
 </span>
 </dt>
@@ -5012,7 +5012,7 @@ If leap years are included, then two other attributes of the time axis should al
 <dt>
 <span class="term">
 <code class="varname">
-leap_year
+leap&#95;year
 </code>
 </span>
 </dt>
@@ -5024,7 +5024,7 @@ An example of a leap year. It is assumed that all years that differ from this ye
 <dt>
 <span class="term">
 <code class="varname">
-leap_month
+leap&#95;month
 </code>
 </span>
 </dt>
@@ -5032,7 +5032,7 @@ leap_month
 <p>
 A value in the range 1-12, specifying which month is lengthened by a day in leap years (1=January). If this attribute is not present, February (2) is assumed. This attribute is ignored if 
 <code class="varname">
-leap_year
+leap&#95;year
 </code>
 is not specified.
 </p>
@@ -5048,15 +5048,15 @@ calendar
 </code>
 attribute is not required when a non-standard calendar is being used. It is sufficient to define the calendar using the 
 <code class="varname">
-month_lengths
+month&#95;lengths
 </code>
 attribute, along with 
 <code class="varname">
-leap_year
+leap&#95;year
 </code>
 , and 
 <code class="varname">
-leap_month
+leap&#95;month
 </code>
 as appropriate. However, the 
 <code class="varname">
@@ -5075,10 +5075,10 @@ Example&nbsp;4.6.&nbsp;Paleoclimate time axis
 <div class="example-contents">
 <pre class="programlisting">
 double time(time) ;
-time:long_name = "time" ;
+time:long&#95;name = "time" ;
 time:units = "days since 1-1-1 0:0:0" ;
 time:calendar = "126 kyr B.P." ;
-time:month_lengths = 34, 31, 32, 30, 29, 27, 28, 28, 28, 32, 32, 34 ;
+time:month&#95;lengths = 34, 31, 32, 30, 29, 27, 28, 28, 28, 32, 32, 34 ;
 </pre>
 </div>
 </div>
@@ -5105,7 +5105,7 @@ show that 1582-10-15 *preceded* 1582-10-14 by 9 days.
 <p>
 Due to problems caused by the discontinuity in the default mixed Gregorian/Julian calendar, we strongly recommend that this calendar should only be used when the time coordinate does not cross the discontinuity. For time coordinates that do cross the discontinuity the 
 <code class="varname">
-proleptic_gregorian
+proleptic&#95;gregorian
 </code>
 calendar should be used instead.
 </p>
@@ -5404,19 +5404,19 @@ pres = 15 ;
 time = 4 ;
 variables:
 float xwind(time,pres,lat,lon) ;
-xwind:long_name = "zonal wind" ;
+xwind:long&#95;name = "zonal wind" ;
 xwind:units = "m/s" ;
 float lon(lon) ;
-lon:long_name = "longitude" ;
-lon:units = "degrees_east" ;
+lon:long&#95;name = "longitude" ;
+lon:units = "degrees&#95;east" ;
 float lat(lat) ;
-lat:long_name = "latitude" ;
-lat:units = "degrees_north" ;
+lat:long&#95;name = "latitude" ;
+lat:units = "degrees&#95;north" ;
 float pres(pres) ;
-pres:long_name = "pressure" ;
+pres:long&#95;name = "pressure" ;
 pres:units = "hPa" ;
 double time(time) ;
-time:long_name = "time" ;
+time:long&#95;name = "time" ;
 time:units = "days since 1990-1-1 0:0:0" ;
 </pre>
 </div>
@@ -5484,30 +5484,30 @@ yc = 64 ;
 lev = 18 ;
 variables:
 float T(lev,yc,xc) ;
-T:long_name = "temperature" ;
+T:long&#95;name = "temperature" ;
 T:units = "K" ;
 T:coordinates = "lon lat" ;
 float xc(xc) ;
 <span class="newtext">
 xc:axis = "X" ;
 </span>
-xc:long_name = "x-coordinate in Cartesian system" ;
+xc:long&#95;name = "x-coordinate in Cartesian system" ;
 xc:units = "m" ;
 float yc(yc) ;
 <span class="newtext">
 yc:axis = "Y" ;
 </span>
-yc:long_name = "y-coordinate in Cartesian system" ;
+yc:long&#95;name = "y-coordinate in Cartesian system" ;
 yc:units = "m" ;
 float lev(lev) ;
-lev:long_name = "pressure level" ;
+lev:long&#95;name = "pressure level" ;
 lev:units = "hPa" ;
 float lon(yc,xc) ;
-lon:long_name = "longitude" ;
-lon:units = "degrees_east" ;
+lon:long&#95;name = "longitude" ;
+lon:units = "degrees&#95;east" ;
 float lat(yc,xc) ;
-lat:long_name = "latitude" ;
-lat:units = "degrees_north" ;
+lat:long&#95;name = "latitude" ;
+lat:units = "degrees&#95;north" ;
 </pre>
 </div>
 </div>
@@ -5618,15 +5618,15 @@ latdim = 64 ;
 rgrid = 6144 ;
 variables:
 float PS(rgrid) ;
-PS:long_name = "surface pressure" ;
+PS:long&#95;name = "surface pressure" ;
 PS:units = "Pa" ;
 PS:coordinates = "lon lat" ;
 float lon(rgrid) ;
-lon:long_name = "longitude" ;
-lon:units = "degrees_east" ;
+lon:long&#95;name = "longitude" ;
+lon:units = "degrees&#95;east" ;
 float lat(rgrid) ;
-lat:long_name = "latitude" ;
-lat:units = "degrees_north" ;
+lat:long&#95;name = "latitude" ;
+lat:units = "degrees&#95;north" ;
 int rgrid(rgrid);
 rgrid:compress = "latdim londim";
 </pre>
@@ -5710,19 +5710,19 @@ pressure = 11 ; // pressure levels
 time = UNLIMITED ;
 variables:
 float humidity(time,pressure,station) ;
-humidity:long_name = "specific humidity" ;
+humidity:long&#95;name = "specific humidity" ;
 humidity:coordinates = "lat lon" ;
 double time(time) ;
-time:long_name = "time of measurement" ;
+time:long&#95;name = "time of measurement" ;
 time:units = "days since 1970-01-01 00:00:00" ;
 float lon(station) ;
-lon:long_name = "station longitude";
-lon:units = "degrees_east";
+lon:long&#95;name = "station longitude";
+lon:units = "degrees&#95;east";
 float lat(station) ;
-lat:long_name = "station latitude" ;
-lat:units = "degrees_north" ;
+lat:long&#95;name = "station latitude" ;
+lat:units = "degrees&#95;north" ;
 float pressure(pressure) ;
-pressure:long_name = "pressure" ;
+pressure:long&#95;name = "pressure" ;
 pressure:units = "hPa" ;
 </pre>
 </div>
@@ -5783,20 +5783,20 @@ dimensions:
 time = 1000 ;
 variables:
 float O3(time) ;
-O3:long_name = "ozone concentration" ;
+O3:long&#95;name = "ozone concentration" ;
 O3:units = "1e-9" ;
 O3:coordinates = "lon lat z" ;
 double time(time) ;
-time:long_name = "time" ;
+time:long&#95;name = "time" ;
 time:units = "days since 1970-01-01 00:00:00" ;
 float lon(time) ;
-lon:long_name = "longitude" ;
-lon:units = "degrees_east" ;
+lon:long&#95;name = "longitude" ;
+lon:units = "degrees&#95;east" ;
 float lat(time) ;
-lat:long_name = "latitude" ;
-lat:units = "degrees_north" ;
+lat:long&#95;name = "latitude" ;
+lat:units = "degrees&#95;north" ;
 float z(time) ;
-z:long_name = "height above mean sea level" ;
+z:long&#95;name = "height above mean sea level" ;
 z:units = "km" ;
 z:positive = "up" ;
 </pre>
@@ -5851,7 +5851,7 @@ If in addition it is desired to describe the mapping between the
 given coordinate variables and the true latitude and longitude
 coordinates, the attribute 
 <code class="varname">
-grid_mapping
+grid&#95;mapping
 </code>
 may be
 used to supply this description. This attribute is attached to data
@@ -5870,17 +5870,17 @@ arbitrary type since it contains no data. Its purpose is to act as
 a container for the attributes that define the mapping. The one
 attribute that all grid mapping variables must have is
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
 which takes a string value that
 contains the mapping's name. The other attributes that define a
 specific mapping depend on the value of
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
 . The valid values of
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
 along with the attributes
 that provide specific map parameter values are
@@ -5899,12 +5899,12 @@ and longitude values it is necessary to associate the coordinate
 variables with the independent variables of the mapping.
 This is done by assigning a 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 to
 the coordinate variable. The appropriate values of the
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 depend on the grid mapping and
 are given in 
@@ -5932,31 +5932,31 @@ rlat = 64 ;
 lev = 18 ;
 variables:
 float T(lev,rlat,rlon) ;
-T:long_name = "temperature" ;
+T:long&#95;name = "temperature" ;
 T:units = "K" ;
 T:coordinates = "lon lat" ;
-T:grid_mapping = "rotated_pole" ;
-char rotated_pole
-rotated_pole:grid_mapping_name = "rotated_latitude_longitude" ;
-rotated_pole:grid_north_pole_latitude = 32.5 ;
-rotated_pole:grid_north_pole_longitude = 170. ;
+T:grid&#95;mapping = "rotated&#95;pole" ;
+char rotated&#95;pole
+rotated&#95;pole:grid&#95;mapping&#95;name = "rotated&#95;latitude&#95;longitude" ;
+rotated&#95;pole:grid&#95;north&#95;pole&#95;latitude = 32.5 ;
+rotated&#95;pole:grid&#95;north&#95;pole&#95;longitude = 170. ;
 float rlon(rlon) ;
-rlon:long_name = "longitude in rotated pole grid" ;
+rlon:long&#95;name = "longitude in rotated pole grid" ;
 rlon:units = "degrees" ;
-rlon:standard_name = "grid_longitude";
+rlon:standard&#95;name = "grid&#95;longitude";
 float rlat(rlat) ;
-rlat:long_name = "latitude in rotated pole grid" ;
+rlat:long&#95;name = "latitude in rotated pole grid" ;
 rlat:units = "degrees" ;
-rlon:standard_name = "grid_latitude";
+rlon:standard&#95;name = "grid&#95;latitude";
 float lev(lev) ;
-lev:long_name = "pressure level" ;
+lev:long&#95;name = "pressure level" ;
 lev:units = "hPa" ;
 float lon(rlat,rlon) ;
-lon:long_name = "longitude" ;
-lon:units = "degrees_east" ;
+lon:long&#95;name = "longitude" ;
+lon:units = "degrees&#95;east" ;
 float lat(rlat,rlon) ;
-lat:long_name = "latitude" ;
-lat:units = "degrees_north" ;
+lat:long&#95;name = "latitude" ;
+lat:units = "degrees&#95;north" ;
 </pre>
 </div>
 </div>
@@ -5966,11 +5966,11 @@ A CF compliant application can determine that rlon and rlat are
 longitude and latitude values in the rotated grid by
 recognizing the standard names 
 <code class="varname">
-grid_longitude
+grid&#95;longitude
 </code>
 and 
 <code class="varname">
-grid_latitude
+grid&#95;latitude
 </code>
 . Note that the units
 of the rotated longitude and latitude axes are given as
@@ -6012,36 +6012,36 @@ y = 228;
 x = 306;
 time = 41;
 variables:
-int Lambert_Conformal;
-Lambert_Conformal:grid_mapping_name = "lambert_conformal_conic";
-Lambert_Conformal:standard_parallel = 25.0;
-Lambert_Conformal:longitude_of_central_meridian = 265.0;
-Lambert_Conformal:latitude_of_projection_origin = 25.0;
+int Lambert&#95;Conformal;
+Lambert&#95;Conformal:grid&#95;mapping&#95;name = "lambert&#95;conformal&#95;conic";
+Lambert&#95;Conformal:standard&#95;parallel = 25.0;
+Lambert&#95;Conformal:longitude&#95;of&#95;central&#95;meridian = 265.0;
+Lambert&#95;Conformal:latitude&#95;of&#95;projection&#95;origin = 25.0;
 double y(y);
 y:units = "km";
-y:long_name = "y coordinate of projection";
-y:standard_name = "projection_y_coordinate";
+y:long&#95;name = "y coordinate of projection";
+y:standard&#95;name = "projection&#95;y&#95;coordinate";
 double x(x);
 x:units = "km";
-x:long_name = "x coordinate of projection";
-x:standard_name = "projection_x_coordinate";
+x:long&#95;name = "x coordinate of projection";
+x:standard&#95;name = "projection&#95;x&#95;coordinate";
 double lat(y, x);
-lat:units = "degrees_north";
-lat:long_name = "latitude coordinate";
-lat:standard_name = "latitude";
+lat:units = "degrees&#95;north";
+lat:long&#95;name = "latitude coordinate";
+lat:standard&#95;name = "latitude";
 double lon(y, x);
-lon:units = "degrees_east";
-lon:long_name = "longitude coordinate";
-lon:standard_name = "longitude";
+lon:units = "degrees&#95;east";
+lon:long&#95;name = "longitude coordinate";
+lon:standard&#95;name = "longitude";
 int time(time);
-time:long_name = "forecast time";
+time:long&#95;name = "forecast time";
 time:units = "hours since 2004-06-23T22:00:00Z";
 float Temperature(time, y, x);
 Temperature:units = "K";
-Temperature:long_name = "Temperature @ surface";
-Temperature:missing_value = 9999.0;
+Temperature:long&#95;name = "Temperature @ surface";
+Temperature:missing&#95;value = 9999.0;
 Temperature:coordinates = "lat lon";
-Temperature:grid_mapping = "Lambert_Conformal";
+Temperature:grid&#95;mapping = "Lambert&#95;Conformal";
 </pre>
 <p>
 An application can determine that 
@@ -6055,16 +6055,16 @@ y
 are the projection coordinates by
 recognizing the standard names 
 <code class="varname">
-projection_x_coordinate
+projection&#95;x&#95;coordinate
 </code>
 and 
 <code class="varname">
-projection_y_coordinate
+projection&#95;y&#95;coordinate
 </code>
 . The grid mapping
 variable 
 <code class="varname">
-Lambert_Conformal
+Lambert&#95;Conformal
 </code>
 contains the mapping
 parameters as attributes, and is associated with
@@ -6074,7 +6074,7 @@ Temperature
 </code>
 variable via its
 <code class="varname">
-grid_mapping attribute
+grid&#95;mapping attribute
 </code>
 .
 </p>
@@ -6141,24 +6141,24 @@ lon = 360 ;
 time = UNLIMITED ;
 variables:
 double atime
-atime:standard_name = "forecast_reference_time" ;
+atime:standard&#95;name = "forecast&#95;reference&#95;time" ;
 atime:units = "hours since 1999-01-01 00:00" ;
 double time(time);
-time:standard_name = "time" ;
+time:standard&#95;name = "time" ;
 time:units = "hours since 1999-01-01 00:00" ;
 double lon(lon) ;
-lon:long_name = "station longitude";
-lon:units = "degrees_east";
+lon:long&#95;name = "station longitude";
+lon:units = "degrees&#95;east";
 double lat(lat) ;
-lat:long_name = "station latitude" ;
-lat:units = "degrees_north" ;
+lat:long&#95;name = "station latitude" ;
+lat:units = "degrees&#95;north" ;
 double p500
-p500:long_name = "pressure" ;
+p500:long&#95;name = "pressure" ;
 p500:units = "hPa" ;
 p500:positive = "down" ;
 float height(time,lat,lon);
-height:long_name = "geopotential height" ;
-height:standard_name = "geopotential_height" ;
+height:long&#95;name = "geopotential height" ;
+height:standard&#95;name = "geopotential&#95;height" ;
 height:units = "m" ;
 height:coordinates = "atime p500" ;
 data:
@@ -6170,7 +6170,7 @@ p500 = 500. ;
 </div>
 <br class="example-break">
 <p>
-In this example both the analysis time and the single pressure level are represented using scalar coordinate variables. The analysis time is identified by the standard name "forecast_reference_time" while the valid time of the forecast is identified by the standard name "time".
+In this example both the analysis time and the single pressure level are represented using scalar coordinate variables. The analysis time is identified by the standard name "forecast&#95;reference&#95;time" while the valid time of the forecast is identified by the standard name "time".
 </p>
 </div>
 </div>
@@ -6267,12 +6267,12 @@ float
 dimensions:
 parcel = 15 ; // number of trajectories
 times = 20 ;
-max_len_parcel_name = 64 ; // max length of trajectory name
+max&#95;len&#95;parcel&#95;name = 64 ; // max length of trajectory name
 variables:
 float temperature(parcel,times) ;
-temperature:coordinates = "parcel_name lat lon" ;
+temperature:coordinates = "parcel&#95;name lat lon" ;
 float times(times) ;
-char parcel_name(parcel,max_len_parcel_name) ;
+char parcel&#95;name(parcel,max&#95;len&#95;parcel&#95;name) ;
 float lon(parcel,times) ;
 float lat(parcel,times) ;
 </pre>
@@ -6294,13 +6294,13 @@ float lat(parcel,times) ;
 <p>
 When data is representative of geographic regions which can be identified by names but which have complex boundaries that cannot practically be specified using longitude and latitude boundary coordinates, a labeled axis should be used to identify the regions. We recommend that the names be chosen from the list of 
 <span class="link-external">
-<a class="ulink" href="http://www.cgd.ucar.edu/cms/eaton/cf-metadata/region.html" target="_top">
+<a class="ulink" href="http://www.cgd.ucar.edu/cms/eaton/cf-metadata/region.html" target="&#95;top">
 standardized region names
 </a>
 </span>
 whenever possible. To indicate that the label values are standardized the variable that contains the labels must be given the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute with the value 
 <code class="constant">
@@ -6327,20 +6327,20 @@ lat = 5
 lbl = 1 ;
 strlen = 64 ;
 variables:
-float n_heat_transport(time,lat,lbl);
-n_heat_transport:units="W";
-n_heat_transport:coordinates="geo_region";
-n_heat_transport:standard_name="northward_ocean_heat_transport";
+float n&#95;heat&#95;transport(time,lat,lbl);
+n&#95;heat&#95;transport:units="W";
+n&#95;heat&#95;transport:coordinates="geo&#95;region";
+n&#95;heat&#95;transport:standard&#95;name="northward&#95;ocean&#95;heat&#95;transport";
 double time(time) ;
-time:long_name = "time" ;
+time:long&#95;name = "time" ;
 time:units = "days since 1990-1-1 0:0:0" ;
 float lat(lat) ;
-lat:long_name = "latitude" ;
-lat:units = "degrees_north" ;
-char geo_region(lbl,strlen) ;
-geo_region:standard_name="region"
+lat:long&#95;name = "latitude" ;
+lat:units = "degrees&#95;north" ;
+char geo&#95;region(lbl,strlen) ;
+geo&#95;region:standard&#95;name="region"
 data:
-geo_region = "atlantic_ocean" ;
+geo&#95;region = "atlantic&#95;ocean" ;
 lat = 10., 20., 30., 40., 50. ;
 </pre>
 </div>
@@ -6377,13 +6377,13 @@ Levels on a vertical axis may be described by both the physical coordinate and t
 </p>
 <pre class="programlisting">
 float xwind(sigma,lat);
-xwind:coordinates="model_level";
+xwind:coordinates="model&#95;level";
 float sigma(sigma); // physical height coordinate
-sigma:long_name="sigma";
+sigma:long&#95;name="sigma";
 sigma:positive="down";
-int model_level(sigma); // model level number at each height
-model_level:long_name="model level number";
-model_level:positive="up";
+int model&#95;level(sigma); // model level number at each height
+model&#95;level:long&#95;name="model level number";
+model&#95;level:positive="up";
 </pre>
 </div>
 </div>
@@ -6503,7 +6503,7 @@ to be part of a coordinate variable's metadata,
 it is not necessary to provide it with attributes
 such as 
 <code class="varname">
-long_name
+long&#95;name
 </code>
 and 
 <code class="varname">
@@ -6760,17 +6760,17 @@ lat = 64;
 nv = 2;    // number of vertices
 variables:
 float lat(lat);
-lat:long_name = "latitude";
-lat:units = "degrees_north";
-lat:bounds = "lat_bnds";
-float lat_bnds(lat,nv);
+lat:long&#95;name = "latitude";
+lat:units = "degrees&#95;north";
+lat:bounds = "lat&#95;bnds";
+float lat&#95;bnds(lat,nv);
 </pre>
 <p>
 </p>
 <p>
 The boundary variable 
 <code class="varname">
-lat_bnds
+lat&#95;bnds
 </code>
 associates a latitude gridpoint
 <code class="varname">
@@ -6778,11 +6778,11 @@ i
 </code>
 with the interval whose boundaries are 
 <code class="varname">
-lat_bnds(i,0)
+lat&#95;bnds(i,0)
 </code>
 and
 <code class="varname">
-lat_bnds(i,1)
+lat&#95;bnds(i,1)
 </code>
 . The gridpoint location, 
 <code class="varname">
@@ -6824,26 +6824,26 @@ jmax = 64;
 nv = 4;
 variables:
 float lat(jmax,imax);
-lat:long_name = "latitude";
-lat:units = "degrees_north";
-lat:bounds = "lat_bnds";
+lat:long&#95;name = "latitude";
+lat:units = "degrees&#95;north";
+lat:bounds = "lat&#95;bnds";
 float lon(jmax,imax);
-lon:long_name = "longitude";
-lon:units = "degrees_east";
-lon:bounds = "lon_bnds";
-float lat_bnds(jmax,imax,nv);
-float lon_bnds(jmax,imax,nv);
+lon:long&#95;name = "longitude";
+lon:units = "degrees&#95;east";
+lon:bounds = "lon&#95;bnds";
+float lat&#95;bnds(jmax,imax,nv);
+float lon&#95;bnds(jmax,imax,nv);
 </pre>
 <p>
 </p>
 <p>
 The boundary variables 
 <code class="varname">
-lat_bnds
+lat&#95;bnds
 </code>
 and 
 <code class="varname">
-lon_bnds
+lon&#95;bnds
 </code>
 associate a
 gridpoint 
@@ -6853,7 +6853,7 @@ gridpoint
 with the cell
 determined by the vertices
 <code class="varname">
-(lat_bnds(j,i,n),lon_bnds(j,i,n))
+(lat&#95;bnds(j,i,n),lon&#95;bnds(j,i,n))
 </code>
 ,
 <code class="varname">
@@ -6939,7 +6939,7 @@ To indicate extra information about the
 spatial properties of a variable's grid cells,
 a 
 <code class="varname">
-cell_measures
+cell&#95;measures
 </code>
 attribute may be defined for a
 variable. This is a string attribute comprising
@@ -6979,7 +6979,7 @@ units
 attribute and may have other
 attributes such as a 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 .
 </p>
@@ -6992,7 +6992,7 @@ of the cell and the difference between the sine
 of each latitude bound of the cell. In this case
 supplying grid-cell areas via the 
 <code class="varname">
-cell_measures
+cell&#95;measures
 </code>
 attribute is unnecessary because it may be assumed
 that applications can perform this calculation,
@@ -7020,24 +7020,24 @@ variables:
 float PS(time,cell) ;
 PS:units = "Pa" ;
 PS:coordinates = "lon lat" ;
-PS:cell_measures = "area: cell_area" ;
+PS:cell&#95;measures = "area: cell&#95;area" ;
 float lon(cell) ;
-lon:long_name = "longitude" ;
-lon:units = "degrees_east" ;
-lon:bounds="lon_vertices" ;
+lon:long&#95;name = "longitude" ;
+lon:units = "degrees&#95;east" ;
+lon:bounds="lon&#95;vertices" ;
 float lat(cell) ;
-lat:long_name = "latitude" ;
-lat:units = "degrees_north" ;
-lat:bounds="lat_vertices" ;
+lat:long&#95;name = "latitude" ;
+lat:units = "degrees&#95;north" ;
+lat:bounds="lat&#95;vertices" ;
 float time(time) ;
-time:long_name = "time" ;
+time:long&#95;name = "time" ;
 time:units = "days since 1979-01-01 0:0:0" ;
-float cell_area(cell) ;
-cell_area:long_name = "area of grid cell" ;
-cell_area:standard_name="area";
-cell_area:units = "m2"
-float lon_vertices(cell,nv) ;
-float lat_vertices(cell,nv) ;
+float cell&#95;area(cell) ;
+cell&#95;area:long&#95;name = "area of grid cell" ;
+cell&#95;area:standard&#95;name="area";
+cell&#95;area:units = "m2"
+float lon&#95;vertices(cell,nv) ;
+float lat&#95;vertices(cell,nv) ;
 </pre>
 <p>
 </p>
@@ -7063,7 +7063,7 @@ float lat_vertices(cell,nv) ;
 To describe the characteristic of a field that
 is represented by cell values we define the
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute of the variable. This
 is a string attribute comprising a list
@@ -7125,11 +7125,11 @@ minimum
 </code>
 , 
 <code class="constant">
-mid_range
+mid&#95;range
 </code>
 , 
 <code class="constant">
-standard_deviation
+standard&#95;deviation
 </code>
 , 
 <code class="constant">
@@ -7175,7 +7175,7 @@ The default interpretation for variables that
 have cells associated with their grid points,
 but do not have the 
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute
 specified, depends on whether the quantity is
@@ -7241,23 +7241,23 @@ station = 10;
 nv = 2;
 variables:
 float pressure(station,time);
-pressure:long_name = "pressure";
+pressure:long&#95;name = "pressure";
 pressure:units = "kPa";
 float maxtemp(station,time);
-maxtemp:long_name = "temperature";
+maxtemp:long&#95;name = "temperature";
 maxtemp:units = "K";
-maxtemp:cell_methods = "time: maximum";
+maxtemp:cell&#95;methods = "time: maximum";
 float ppn(station,time);
-ppn:long_name = "depth of water-equivalent precipitation";
+ppn:long&#95;name = "depth of water-equivalent precipitation";
 ppn:units = "mm";
 double time(time);
-time:long_name = "time";
+time:long&#95;name = "time";
 time:units = "h since 1998-4-19 6:0:0";
-time:bounds = "time_bnds";
-double time_bnds(time,nv);
+time:bounds = "time&#95;bnds";
+double time&#95;bnds(time,nv);
 data:
 time = 0., 12., 24., 36., 48.;
-time_bnds = -12.,0., 0.,12., 12.,24., 24.,36., 36.,48.; 
+time&#95;bnds = -12.,0., 0.,12., 12.,24., 24.,36., 36.,48.; 
 </pre>
 <p>
 </p>
@@ -7274,7 +7274,7 @@ simply obtain the midpoint values
 by making use of the boundary
 data in 
 <code class="constant">
-time_bnds
+time&#95;bnds
 </code>
 .
 </p>
@@ -7291,20 +7291,20 @@ in both longitude and time (dimensions lon and time) within each
 gridbox. Values that represent the time-average of the zonal
 maximum are labelled 
 <code class="varname">
-cell_methods="lon: maximum time: mean"
+cell&#95;methods="lon: maximum time: mean"
 </code>
 ,
 i.e. find the largest value at each instant of time over all
 longitudes, then average these maxima over time; values of the
 zonal maximum of time-averages are labelled
 <code class="varname">
-cell_methods="time: mean lon: maximum"
+cell&#95;methods="time: mean lon: maximum"
 </code>
 . If the methods could
 have been applied in any order without affecting the outcome,
 they may be put in any order in the 
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute.
 </p>
@@ -7317,12 +7317,12 @@ difference from treating them individually. For instance, the
 standard deviation of topographic height within a
 longitude-latitude gridbox would have
 <code class="varname">
-cell_methods="lat: lon: standard_deviation"
+cell&#95;methods="lat: lon: standard&#95;deviation"
 </code>
 . This is not the
 same as
 <code class="varname">
-cell_methods="lon: standard_deviation lat: standard_deviation"
+cell&#95;methods="lon: standard&#95;deviation lat: standard&#95;deviation"
 </code>
 ,
 which would mean finding the standard deviation along each
@@ -7389,11 +7389,11 @@ interval is particularly important for standard deviations.
 For example, the standard deviation of daily values could be
 indicated by
 <code class="varname">
-cell_methods="time: standard_deviation (interval: 1 day)"
+cell&#95;methods="time: standard&#95;deviation (interval: 1 day)"
 </code>
 and of annual values
 <code class="varname">
-cell_methods="time: standard_deviation (interval: 1 year)"
+cell&#95;methods="time: standard&#95;deviation (interval: 1 year)"
 </code>
 .
 </p>
@@ -7402,14 +7402,14 @@ If the cell method applies to a combination of axes, they may
 have a common original interval
 e.g. 
 <code class="varname">
-cell_methods="lat: lon: standard_deviation (interval: 10 km)"
+cell&#95;methods="lat: lon: standard&#95;deviation (interval: 10 km)"
 </code>
 .
 Alternatively, they may have separate intervals, which are
 matched to the names of axes by position
 e.g. 
 <code class="varname">
-cell_methods="lat: lon: standard_deviation (interval: 0.1 degree_N interval: 0.2 degree_E)"
+cell&#95;methods="lat: lon: standard&#95;deviation (interval: 0.1 degree&#95;N interval: 0.2 degree&#95;E)"
 </code>
 ,
 in which 0.1 degree applies to latitude and 0.2 degree to longitude.
@@ -7428,7 +7428,7 @@ lat: mean (area-weighted)
 </code>
 or 
 <code class="varname">
-lat: mean (interval: 1 degree_north comment: area-weighted)
+lat: mean (interval: 1 degree&#95;north comment: area-weighted)
 </code>
 .
 </p>
@@ -7465,24 +7465,24 @@ lon=180;
 time=1;
 nv=2;
 variables:
-float TS_var(time,lat,lon);
-TS_var:long_name="surface air temperature variance"
-TS_var:units="K2";
-TS_var:cell_methods="time: variance (of hourly instantaneous)";
+float TS&#95;var(time,lat,lon);
+TS&#95;var:long&#95;name="surface air temperature variance"
+TS&#95;var:units="K2";
+TS&#95;var:cell&#95;methods="time: variance (of hourly instantaneous)";
 float time(time);
 time:units="days since 1990-01-01 00:00:00";
-time:bounds="time_bnds";
-float time_bnds(time,nv);
+time:bounds="time&#95;bnds";
+float time&#95;bnds(time,nv);
 data:
 time=.5;
-time_bnds=0.,1.;
+time&#95;bnds=0.,1.;
 </pre>
 <p>
 </p>
 <p>
 Notice that a parenthesized comment in the
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute provides
 the nature of the samples used to calculate the variance.
@@ -7495,7 +7495,7 @@ the nature of the samples used to calculate the variance.
 <p>
 The convention of specifying a cell method for a
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 rather than for
 a dimension with a coordinate variable is to allow
@@ -7672,7 +7672,7 @@ in each January, then find the largest one. As
 usual, the statistical operations are recorded
 in the 
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute, which may have
 two or three entries for the climatological
@@ -7681,7 +7681,7 @@ time dimension.
 <p>
 Valid values of the 
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute must be
 in one of the forms from the following list. The
@@ -7868,7 +7868,7 @@ Cell Methods
 </a>
 and each entry in the
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 attribute may also, as usual, contain
 non-standardised information in parentheses after
@@ -7935,16 +7935,16 @@ time=4;
 nv=2;
 variables:
 float temperature(time,lat,lon);
-temperature:long_name="surface air temperature";
-temperature:cell_methods="time: minimum within years time: mean over years";
+temperature:long&#95;name="surface air temperature";
+temperature:cell&#95;methods="time: minimum within years time: mean over years";
 temperature:units="K";
 double time(time);
-time:climatology="climatology_bounds";
+time:climatology="climatology&#95;bounds";
 time:units="days since 1960-1-1";
-double climatology_bounds(time,nv);
+double climatology&#95;bounds(time,nv);
 data:  // time coordinates translated to date/time format
 time="1960-4-16", "1960-7-16", "1960-10-16", "1961-1-16" ;
-climatology_bounds="1960-3-1",  "1990-6-1",
+climatology&#95;bounds="1960-3-1",  "1990-6-1",
 "1960-6-1",  "1990-9-1",
 "1960-9-1",  "1990-12-1",
 "1960-12-1", "1991-3-1" ;
@@ -7981,16 +7981,16 @@ time=3;
 nv=2;
 variables:
 float precipitation(time,lat,lon);
-precipitation:long_name="precipitation amount";
-precipitation:cell_methods="time: sum within years time: mean over years";
+precipitation:long&#95;name="precipitation amount";
+precipitation:cell&#95;methods="time: sum within years time: mean over years";
 precipitation:units="kg m-2";
 double time(time);
-time:climatology="climatology_bounds";
+time:climatology="climatology&#95;bounds";
 time:units="days since 1901-1-1";
-double climatology_bounds(time,nv);
+double climatology&#95;bounds(time,nv);
 data:  // time coordinates translated to date/time format
 time="1965-1-15", "1975-1-15", "1985-1-15" ;
-climatology_bounds="1961-1-1", "1970-2-1",
+climatology&#95;bounds="1961-1-1", "1970-2-1",
 "1971-1-1", "1980-2-1",
 "1981-1-1", "1990-2-1" ;
 </pre>
@@ -8023,16 +8023,16 @@ time=24;
 nv=2;
 variables:
 float temperature(time,lat,lon);
-temperature:long_name="surface air temperature";
-temperature:cell_methods="time: mean within days time: mean over days";
+temperature:long&#95;name="surface air temperature";
+temperature:cell&#95;methods="time: mean within days time: mean over days";
 temperature:units="K";
 double time(time);
-time:climatology="climatology_bounds";
+time:climatology="climatology&#95;bounds";
 time:units="hours since 1997-4-1";
-double climatology_bounds(time,nv);
+double climatology&#95;bounds(time,nv);
 data:  // time coordinates translated to date/time format
 time="1997-4-1 0:30", "1997-4-1 1:30", ... "1997-4-1 23:30" ;
-climatology_bounds="1997-4-1 0:00",  "1997-4-30 1:00",
+climatology&#95;bounds="1997-4-1 0:00",  "1997-4-30 1:00",
 "1997-4-1 1:00",  "1997-4-30 2:00",
 ...
 "1997-4-1 23:00", "1997-5-1 0:00" ;
@@ -8066,17 +8066,17 @@ now applies to April from a
 <pre class="programlisting">
 variables:
 float temperature(time,lat,lon);
-temperature:long_name="surface air temperature";
-temperature:cell_methods="time: mean within days ",
+temperature:long&#95;name="surface air temperature";
+temperature:cell&#95;methods="time: mean within days ",
 "time: mean over days time: mean over years";
 temperature:units="K";
 double time(time);
-time:climatology="climatology_bounds";
+time:climatology="climatology&#95;bounds";
 time:units="days since 1961-1-1";
-double climatology_bounds(time,nv);
+double climatology&#95;bounds(time,nv);
 data:  // time coordinates translated to date/time format
 time="1961-4-1 0:30", "1961-4-1 1:30", ..., "1961-4-1 23:30" ;
-climatology_bounds="1961-4-1 0:00", "1990-4-30 1:00",
+climatology&#95;bounds="1961-4-1 0:00", "1990-4-30 1:00",
 "1961-4-1 1:00", "1990-4-30 2:00",
 ...
 "1961-4-1 23:00", "1990-5-1 0:00" ;
@@ -8119,16 +8119,16 @@ time=3;
 nv=2;
 variables:
 float precipitation(time,lat,lon);
-precipitation:long_name="Accumulated precipitation";
-precipitation:cell_methods="time: sum within days time: maximum over days"; 
+precipitation:long&#95;name="Accumulated precipitation";
+precipitation:cell&#95;methods="time: sum within days time: maximum over days"; 
 precipitation:units="kg";
 double time(time);
-time:climatology="climatology_bounds";
+time:climatology="climatology&#95;bounds";
 time:units="days since 2000-6-1";
-double climatology_bounds(time,nv);
+double climatology&#95;bounds(time,nv);
 data:  // time coordinates translated to date/time format
 time="2000-6-16", "2000-7-16", "2000-8-16" ;
-climatology_bounds="2000-6-1 6:00:00", "2000-7-1 6:00:00",
+climatology&#95;bounds="2000-6-1 6:00:00", "2000-7-1 6:00:00",
 "2000-7-1 6:00:00", "2000-8-1 6:00:00",
 "2000-8-1 6:00:00", "2000-9-1 6:00:00" ;
 </pre>
@@ -8221,22 +8221,22 @@ not provide for packing data. However a simple
 packing may be achieved through the use of the
 optional NUG defined attributes 
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 and
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 . 
 After the data values of a variable
 have been read, they are to be multiplied by
 the 
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 , and have 
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 added to
 them. If both attributes are present, the data
@@ -8250,21 +8250,21 @@ representative of the unpacked data.
 This standard is more restrictive than the NUG
 with respect to the use of the 
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 and
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 attributes; ambiguities and precision
 problems related to data type conversions
 are resolved by these restrictions. If the
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 and 
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 attributes are of
 the same data type as the associated variable,
@@ -8272,11 +8272,11 @@ the unpacked data is assumed to be of the
 same data type as the packed data. However,
 if the 
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 and 
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 attributes
 are of a different data type from the variable
@@ -8322,19 +8322,19 @@ When data to be packed contains missing values
 the attributes that indicate missing values
 (
 <code class="varname">
-_FillValue
+&#95;FillValue
 </code>
 , 
 <code class="varname">
-valid_min
+valid&#95;min
 </code>
 , 
 <code class="varname">
-valid_max
+valid&#95;max
 </code>
 , 
 <code class="varname">
-valid_range
+valid&#95;range
 </code>
 )
 must be of the same data type as the packed
@@ -8444,7 +8444,7 @@ variables:
 int landpoint(landpoint);
 landpoint:compress="lat lon";
 float landsoilt(depth,landpoint);
-landsoilt:long_name="soil temperature";
+landsoilt:long&#95;name="soil temperature";
 landsoilt:units="K";
 float depth(depth);
 float lat(lat);
@@ -8630,7 +8630,7 @@ Description
 <tr>
 <td align="left">
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 </td>
 <td align="center">
@@ -8641,7 +8641,7 @@ D
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -8653,11 +8653,11 @@ Section&nbsp;8.1, “Packed Data”
 <td align="left">
 If present for a variable, this number is to be added to the data after it is read by an application. If both 
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 and 
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 attributes are present, the data are first scaled before the offset is added.
 </td>
@@ -8665,7 +8665,7 @@ attributes are present, the data are first scaled before the offset is added.
 <tr>
 <td align="left">
 <code class="varname">
-ancillary_variables 
+ancillary&#95;variables 
 </code>
 </td>
 <td align="center">
@@ -8752,7 +8752,7 @@ Calendar used for encoding time axes.
 <tr>
 <td align="left">
 <code class="varname">
-cell_measures
+cell&#95;measures
 </code>
 </td>
 <td align="center">
@@ -8773,7 +8773,7 @@ Identifies variables that contain cell areas or volumes.
 <tr>
 <td align="left">
 <code class="varname">
-cell_methods
+cell&#95;methods
 </code>
 </td>
 <td align="center">
@@ -8876,7 +8876,7 @@ G
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -8920,7 +8920,7 @@ Identifies auxiliary coordinate variables, label variables, and alternate coordi
 <tr>
 <td align="left">
 <code class="varname">
-_FillValue
+&#95;FillValue
 </code>
 </td>
 <td align="center">
@@ -8931,7 +8931,7 @@ D
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -8943,7 +8943,7 @@ A value used to represent missing or undefined data.
 <tr>
 <td align="left">
 <code class="varname">
-flag_meanings
+flag&#95;meanings
 </code>
 </td>
 <td align="center">
@@ -8960,7 +8960,7 @@ Section&nbsp;3.5, “Flags”
 <td align="left">
 Use in conjunction with 
 <code class="varname">
-flag_values
+flag&#95;values
 </code>
 to provide descriptive words or phrases for each flag value. If multi-word phrases are used to describe the flag values, then the words within a phrase should be connected with underscores.
 </td>
@@ -8968,7 +8968,7 @@ to provide descriptive words or phrases for each flag value. If multi-word phras
 <tr>
 <td align="left">
 <code class="varname">
-flag_values
+flag&#95;values
 </code>
 </td>
 <td align="center">
@@ -8985,7 +8985,7 @@ Section&nbsp;3.5, “Flags”
 <td align="left">
 Provides a list of the flag values. Use in conjunction with 
 <code class="varname">
-flag_meanings
+flag&#95;meanings
 </code>
 .
 </td>
@@ -8993,7 +8993,7 @@ flag_meanings
 <tr>
 <td align="left">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 </td>
 <td align="center">
@@ -9014,7 +9014,7 @@ Identifies variables that correspond to the terms in a formula.
 <tr>
 <td align="left">
 <code class="varname">
-grid_mapping
+grid&#95;mapping
 </code>
 </td>
 <td align="center">
@@ -9046,7 +9046,7 @@ G
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -9079,7 +9079,7 @@ Where the original data was produced.
 <tr>
 <td align="left">
 <code class="varname">
-leap_month
+leap&#95;month
 </code>
 </td>
 <td align="center">
@@ -9100,7 +9100,7 @@ Specifies which month is lengthened by a day in leap years for a user defined ca
 <tr>
 <td align="left">
 <code class="varname">
-leap_year
+leap&#95;year
 </code>
 </td>
 <td align="center">
@@ -9121,7 +9121,7 @@ Provides an example of a leap year for a user defined calendar. It is assumed th
 <tr>
 <td align="left">
 <code class="varname">
-long_name
+long&#95;name
 </code>
 </td>
 <td align="center">
@@ -9132,7 +9132,7 @@ C, D
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -9148,7 +9148,7 @@ A descriptive name that indicates a variable"s content. This name is not standar
 <tr>
 <td align="left">
 <code class="varname">
-missing_value
+missing&#95;value
 </code>
 </td>
 <td align="center">
@@ -9169,7 +9169,7 @@ A value used to represent missing or undefined data (deprecated by the NUG).
 <tr>
 <td align="left">
 <code class="varname">
-month_lengths
+month&#95;lengths
 </code>
 </td>
 <td align="center">
@@ -9236,7 +9236,7 @@ References that describe the data or methods used to produce it.
 <tr>
 <td align="left">
 <code class="varname">
-scale_factor
+scale&#95;factor
 </code>
 </td>
 <td align="center">
@@ -9247,7 +9247,7 @@ D
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -9259,7 +9259,7 @@ Section&nbsp;8.1, “Packed Data”
 <td align="left">
 If present for a variable, the data are to be multiplied by this factor after the data are read by an application See also the 
 <code class="varname">
-add_offset
+add&#95;offset
 </code>
 attribute.
 </td>
@@ -9288,7 +9288,7 @@ Method of production of the original data.
 <tr>
 <td align="left">
 <code class="varname">
-standard_error_multiplier
+standard&#95;error&#95;multiplier
 </code>
 </td>
 <td align="center">
@@ -9306,13 +9306,13 @@ Standard Name Modifiers
 </a>
 </td>
 <td align="left">
-If a data variable with a standard_name modifier of standard_error has this attribute, it indicates that the values are the stated multiple of one standard error.
+If a data variable with a standard&#95;name modifier of standard&#95;error has this attribute, it indicates that the values are the stated multiple of one standard error.
 </td>
 </tr>
 <tr>
 <td align="left">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 </td>
 <td align="center">
@@ -9344,7 +9344,7 @@ G
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -9367,7 +9367,7 @@ C, D
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -9383,7 +9383,7 @@ Units of a variable"s content.
 <tr>
 <td align="left">
 <code class="varname">
-valid_max
+valid&#95;max
 </code>
 </td>
 <td align="center">
@@ -9394,7 +9394,7 @@ C, D
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -9406,7 +9406,7 @@ Largest valid value of a variable.
 <tr>
 <td align="left">
 <code class="varname">
-valid_min
+valid&#95;min
 </code>
 </td>
 <td align="center">
@@ -9417,7 +9417,7 @@ C, D
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -9429,7 +9429,7 @@ Smallest valid value of a variable.
 <tr>
 <td align="left">
 <code class="varname">
-valid_range
+valid&#95;range
 </code>
 </td>
 <td align="center">
@@ -9440,7 +9440,7 @@ C, D
 </td>
 <td align="center">
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/guidef-13.html#HEADING13-12" target="&#95;top">
 NUG (8.1)
 </a>
 </span>
@@ -9499,24 +9499,24 @@ The document begins with a header that identifies it as an XML file:
 <p>
 Next is the 
 <code class="varname">
-standard_name_table
+standard&#95;name&#95;table
 </code>
 itself, which is bracketed by the tags
 <code class="varname">
 <code class="sgmltag-element">
-&lt;standard_name_table&gt;
+&lt;standard&#95;name&#95;table&gt;
 </code>
 </code>
 and 
 <code class="varname">
 <code class="sgmltag-element">
-&lt;/standard_name_table&gt;
+&lt;/standard&#95;name&#95;table&gt;
 </code>
 </code>
 .
 </p>
 <pre class="programlisting">
-&lt;standard_name_table 
+&lt;standard&#95;name&#95;table 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="CFStandardNameTable.xsd"&gt;
 </pre>
@@ -9525,7 +9525,7 @@ xsi:noNamespaceSchemaLocation="CFStandardNameTable.xsd"&gt;
 <p>
 The content (delimited by the 
 <code class="sgmltag-element">
-&lt;standard_name_table&gt;
+&lt;standard&#95;name&#95;table&gt;
 </code>
 tags) 
 consists of, in order,
@@ -9556,12 +9556,12 @@ alias
 elements take the following forms:
 </p>
 <pre class="programlisting">
-&lt;entry id="an_id"&gt;
-Define the variable whose standard_name attribute has the value "an_id".  
+&lt;entry id="an&#95;id"&gt;
+Define the variable whose standard&#95;name attribute has the value "an&#95;id".  
 &lt;/entry&gt;
-&lt;alias id="another_id"&gt;
-Provide alias for a variable whose standard_name attribute has the
-value "another_id".
+&lt;alias id="another&#95;id"&gt;
+Provide alias for a variable whose standard&#95;name attribute has the
+value "another&#95;id".
 &lt;/alias&gt;
 </pre>
 <p>
@@ -9585,7 +9585,7 @@ which uniquely identifies the entry relative to the table.
 <em>
 This is the value used for a variable's 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute.
 </em>
@@ -9609,8 +9609,8 @@ element
 contains the following elements:
 </p>
 <pre class="programlisting">
-&lt;entry id="an_id"&gt;
-&lt;canonical_units&gt;Representative units for the variable ... &lt;/canonical_units&gt;
+&lt;entry id="an&#95;id"&gt;
+&lt;canonical&#95;units&gt;Representative units for the variable ... &lt;/canonical&#95;units&gt;
 &lt;description&gt;Description of the variable ... &lt;/description&gt;
 &lt;/entry&gt;
 </pre>
@@ -9680,7 +9680,7 @@ alias
 elements be used to accommodate the use of
 local naming conventions in the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute
 strings. Each 
@@ -9690,8 +9690,8 @@ alias
 element contains a single element:
 </p>
 <pre class="programlisting">
-&lt;alias id="an_id"&gt;
-&lt;entry_id&gt;Identifier of the defining entry ... &lt;/entry_id&gt;
+&lt;alias id="an&#95;id"&gt;
+&lt;entry&#95;id&gt;Identifier of the defining entry ... &lt;/entry&#95;id&gt;
 &lt;/alias&gt;
 </pre>
 <p>
@@ -9711,31 +9711,31 @@ Example&nbsp;B.1.&nbsp;A name table containing three entries
 </p>
 <pre class="programlisting">
 &lt;?xml version="1.0"?&gt;
-&lt;standard_name_table&gt;
+&lt;standard&#95;name&#95;table&gt;
 &lt;institution&gt;Program for Climate Model Diagnosis and Intercomparison&lt;/institution&gt;
 &lt;contact&gt;support@pcmdi.llnl.gov&lt;/contact&gt;
-&lt;entry id="surface_air_pressure"&gt;
-&lt;canonical_units&gt;Pa&lt;/canonical_units&gt;
+&lt;entry id="surface&#95;air&#95;pressure"&gt;
+&lt;canonical&#95;units&gt;Pa&lt;/canonical&#95;units&gt;
 &lt;grib&gt;E134&lt;/grib&gt;
 &lt;amip&gt;ps&lt;/amip&gt;
 &lt;description&gt;
 The surface called "surface" means the lower boundary of the atmosphere.  
 &lt;/description&gt;
 &lt;/entry&gt;
-&lt;entry id="air_pressure_at_sea_level"&gt;
-&lt;canonical_units&gt;Pa&lt;/canonical_units&gt;
+&lt;entry id="air&#95;pressure&#95;at&#95;sea&#95;level"&gt;
+&lt;canonical&#95;units&gt;Pa&lt;/canonical&#95;units&gt;
 &lt;grib&gt;2 E151&lt;/grib&gt;
 &lt;amip&gt;psl&lt;/amip&gt;
 &lt;description&gt;
 Air pressure at sea level is the quantity often abbreviated 
-as MSLP or PMSL. sea_level means mean sea level, which is close 
+as MSLP or PMSL. sea&#95;level means mean sea level, which is close 
 to the geoid in sea areas.  
 &lt;/description&gt;
 &lt;/entry&gt;
-&lt;alias id="mean_sea_level_pressure"&gt;
-&lt;entry_id&gt;air_pressure_at_sea_level&lt;/entry_id&gt;
+&lt;alias id="mean&#95;sea&#95;level&#95;pressure"&gt;
+&lt;entry&#95;id&gt;air&#95;pressure&#95;at&#95;sea&#95;level&lt;/entry&#95;id&gt;
 &lt;/alias&gt;
-&lt;/standard_name_table&gt;
+&lt;/standard&#95;name&#95;table&gt;
 </pre>
 <p>
 </p>
@@ -9747,16 +9747,16 @@ to the geoid in sea areas.
 <p>
 The definition of a variable with the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute 
 <code class="varname">
-surface_air_pressure
+surface&#95;air&#95;pressure
 </code>
 is found directly since
 the element with 
 <code class="varname">
-id="surface_air_pressure"
+id="surface&#95;air&#95;pressure"
 </code>
 is an
 <code class="varname">
@@ -9767,25 +9767,25 @@ element which contains the definition.
 <p>
 The definition of a variable with the
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute
 <code class="constant">
-mean_sea_level_pressure
+mean&#95;sea&#95;level&#95;pressure
 </code>
 is found indirectly by first finding the element with the
 <code class="varname">
-id="mean_sea_level_pressure"
+id="mean&#95;sea&#95;level&#95;pressure"
 </code>
 ,
 and then, since this is an alias element, by searching for the element with
 <code class="varname">
-id="air_pressure_at_sea_level"
+id="air&#95;pressure&#95;at&#95;sea&#95;level"
 </code>
 as indicated
 by the value of the 
 <code class="varname">
-entry_id
+entry&#95;id
 </code>
 tag.
 </p>
@@ -9855,7 +9855,7 @@ Description
 <tr>
 <td align="left">
 <code class="constant">
-detection_minimum
+detection&#95;minimum
 </code>
 </td>
 <td align="left">
@@ -9872,7 +9872,7 @@ The smallest data value which is regarded as a detectable signal.
 <tr>
 <td align="left">
 <code class="constant">
-number_of_observations
+number&#95;of&#95;observations
 </code>
 </td>
 <td align="left">
@@ -9885,7 +9885,7 @@ The number of discrete observations or measurements from which a data value has 
 <tr>
 <td align="left">
 <code class="constant">
-standard_error
+standard&#95;error
 </code>
 </td>
 <td align="left">
@@ -9898,11 +9898,11 @@ u
 <td align="left">
 The uncertainty of the data value. The standard error includes both systematic and statistical uncertainty. By default it is assumed that the values supplied are for one standard error. If the values supplied are for some multiple of the standard error, the 
 <code class="constant">
-standard_error
+standard&#95;error
 </code>
 ancillary variable should have an attribute 
 <code class="varname">
-standard_error_multiplier
+standard&#95;error&#95;multiplier
 </code>
 stating the multiplication factor.
 </td>
@@ -9910,7 +9910,7 @@ stating the multiplication factor.
 <tr>
 <td align="left">
 <code class="constant">
-status_flag
+status&#95;flag
 </code>
 </td>
 <td align="left">
@@ -9919,11 +9919,11 @@ status_flag
 <td align="left">
 Flag values indicating the quality or other status of the data values. The variable should have 
 <code class="varname">
-flag_values
+flag&#95;values
 </code>
 and 
 <code class="varname">
-flag_meanings
+flag&#95;meanings
 </code>
 attributes to show how it should be interpreted (
 <a class="xref" href="#flags" title="3.5.&nbsp;Flags">
@@ -9981,16 +9981,16 @@ n
 is the time index. A coordinate variable is associated
 with its definition by the value of the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute. The terms in the definition are associated
 with file variables by the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute. The
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute takes a string value, the string
 being comprised of blank-separated elements of the form
@@ -10028,7 +10028,7 @@ files. Also, the definitions are given in general forms
 that may be simplified by omitting certain terms. A term
 that is omitted from the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute should
 be assumed to be zero.
@@ -10050,9 +10050,9 @@ Example&nbsp;D.1.&nbsp; Atmosphere natural log pressure coordinate
 </p>
 <pre class="programlisting">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
-= "atmosphere_ln_pressure_coordinate"
+= "atmosphere&#95;ln&#95;pressure&#95;coordinate"
 </pre>
 <p>
 </p>
@@ -10100,13 +10100,13 @@ at vertical gridpoint
 <p>
 The format for the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute is 
 </p>
 <pre class="programlisting">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 = "p0: var1 lev: var2"
 </pre>
@@ -10132,9 +10132,9 @@ Example&nbsp;D.2.&nbsp; Atmosphere sigma coordinate
 </p>
 <pre class="programlisting">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
-= "atmosphere_sigma_coordinate"
+= "atmosphere&#95;sigma&#95;coordinate"
 </pre>
 <p>
 </p>
@@ -10193,11 +10193,11 @@ and time
 .
 </p>
 <p>
-The format for the formula_terms attribute is 
+The format for the formula&#95;terms attribute is 
 </p>
 <pre class="programlisting">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 = "sigma: var1 ps: var2 ptop: var3"
 </pre>
@@ -10221,9 +10221,9 @@ Example&nbsp;D.3.&nbsp; Atmosphere hybrid sigma pressure coordinate
 </p>
 <pre class="programlisting">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
-= "atmosphere_hybrid_sigma_pressure_coordinate"
+= "atmosphere&#95;hybrid&#95;sigma&#95;pressure&#95;coordinate"
 </pre>
 <p>
 </p>
@@ -10313,13 +10313,13 @@ fraction.
 <p>
 The format for the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute is
 </p>
 <pre class="programlisting">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 = "a: var1 b: var2 ps: var3 p0: var4" 
 </pre>
@@ -10368,9 +10368,9 @@ Example&nbsp;D.4.&nbsp; Atmosphere hybrid height coordinate
 </p>
 <pre class="programlisting">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
-= "atmosphere_hybrid_height_coordinate"
+= "atmosphere&#95;hybrid&#95;height&#95;coordinate"
 </pre>
 <p>
 </p>
@@ -10443,13 +10443,13 @@ is dimensionless.
 <p>
 The format for the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute is 
 </p>
 <pre class="programlisting">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 = "a: var1 b: var2 orog: var3"
 </pre>
@@ -10481,9 +10481,9 @@ Example&nbsp;D.5.&nbsp; Atmosphere smooth level vertical (SLEVE) coordinate
 </p>
 <pre class="programlisting">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
-= "atmosphere_sleve_coordinate"
+= "atmosphere&#95;sleve&#95;coordinate"
 </pre>
 <p>
 </p>
@@ -10558,13 +10558,13 @@ for details.
 <p>
 The format for the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute is 
 </p>
 <pre class="programlisting">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 = "a: var1 b1: var2 b2: var3 ztop: var4 zsurf1: var5
 zsurf2: var6"
@@ -10600,9 +10600,9 @@ Example&nbsp;D.6.&nbsp; Ocean sigma coordinate
 </p>
 <pre class="programlisting">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
-= "ocean_sigma_coordinate"
+= "ocean&#95;sigma&#95;coordinate"
 </pre>
 <p>
 </p>
@@ -10665,13 +10665,13 @@ at horizontal gridpoint
 <p>
 The format for the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute is 
 </p>
 <pre class="programlisting">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 = "sigma: var1 eta: var2 depth: var3"
 </pre>
@@ -10695,9 +10695,9 @@ Example&nbsp;D.7.&nbsp; Ocean s-coordinate
 </p>
 <pre class="programlisting">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
-= "ocean_s_coordinate"
+= "ocean&#95;s&#95;coordinate"
 </pre>
 <p>
 </p>
@@ -10712,8 +10712,8 @@ Definition:
 </dt>
 <dd>
 <pre class="programlisting">
-z(n,k,j,i) = eta(n,j,i)*(1+s(k)) + depth_c*s(k) +
-(depth(j,i)-depth_c)*C(k)
+z(n,k,j,i) = eta(n,j,i)*(1+s(k)) + depth&#95;c*s(k) +
+(depth(j,i)-depth&#95;c)*C(k)
 C(k) = (1-b)*sinh(a*s(k))/sinh(a) + 
 b*[tanh(a*(s(k)+0.5))/(2*tanh(0.5*a)) - 0.5]
 </pre>
@@ -10769,22 +10769,22 @@ b
 </code>
 , and 
 <code class="varname">
-depth_c
+depth&#95;c
 </code>
 control the stretching.
 </p>
 <p>
 The format for the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute is 
 </p>
 <pre class="programlisting">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
-= "s: var1 eta: var2 depth: var3 a: var4 b: var5 depth_c: var6"
+= "s: var1 eta: var2 depth: var3 a: var4 b: var5 depth&#95;c: var6"
 </pre>
 <p>
 </p>
@@ -10806,9 +10806,9 @@ Example&nbsp;D.8.&nbsp; Ocean sigma over z coordinate
 </p>
 <pre class="programlisting">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
-= "ocean_sigma_z_coordinate"
+= "ocean&#95;sigma&#95;z&#95;coordinate"
 </pre>
 <p>
 </p>
@@ -10824,7 +10824,7 @@ Definition:
 <dd>
 <pre class="programlisting">
 for k &lt;= nsigma:
-z(n,k,j,i) = eta(n,j,i) + sigma(k)*(min(depth_c,depth(j,i))+eta(n,j,i))
+z(n,k,j,i) = eta(n,j,i) + sigma(k)*(min(depth&#95;c,depth(j,i))+eta(n,j,i))
 for k &gt; nsigma:
 z(n,k,j,i) = zlev(k)
 </pre>
@@ -10876,7 +10876,7 @@ sea floor (positive value) at horizontal gridpoint
 .
 Above depth 
 <code class="varname">
-depth_c
+depth&#95;c
 </code>
 there are 
 <code class="varname">
@@ -10887,15 +10887,15 @@ layers.
 <p>
 The format for the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute is 
 </p>
 <pre class="programlisting">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
-= "sigma: var1 eta: var2 depth: var3 depth_c: var4 nsigma: var5
+= "sigma: var1 eta: var2 depth: var3 depth&#95;c: var4 nsigma: var5
 zlev: var6"
 </pre>
 <p>
@@ -10918,9 +10918,9 @@ Example&nbsp;D.9.&nbsp; Ocean double sigma coordinate
 </p>
 <pre class="programlisting">
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
-= "ocean_double_sigma_coordinate"
+= "ocean&#95;double&#95;sigma&#95;coordinate"
 </pre>
 <p>
 </p>
@@ -10935,9 +10935,9 @@ Definition:
 </dt>
 <dd>
 <pre class="programlisting">
-for k &lt;= k_c
+for k &lt;= k&#95;c
 z(k,j,i)= sigma(k)*f(j,i)
-for k &gt; k_c
+for k &gt; k&#95;c
 z(k,j,i)= f(j,i) + (sigma(k)-1)*(depth(j,i)-f(j,i))
 f(j,i)= 0.5*(z1+ z2) + 0.5*(z1-z2)* tanh(2*a/(z1-z2)*(depth(j,i)-href))
 </pre>
@@ -10965,7 +10965,7 @@ gridpoint
 </code>
 for 
 <code class="varname">
-k &lt;= k_c
+k &lt;= k&#95;c
 </code>
 ,
 and 
@@ -10999,16 +10999,16 @@ are constants.
 <p>
 The format for the 
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 attribute is 
 </p>
 <pre class="programlisting">
 <code class="varname">
-formula_terms
+formula&#95;terms
 </code>
 = "sigma: var1 depth: var2 z1: var3 z2: var4 a: var5 href: var6
-k_c: var7"
+k&#95;c: var7"
 </pre>
 <p>
 </p>
@@ -11064,7 +11064,7 @@ Table&nbsp;E.1.&nbsp;Cell Methods
 <tr>
 <th align="left">
 <code class="varname">
-cell_method
+cell&#95;method
 </code>
 </th>
 <th align="left">
@@ -11147,7 +11147,7 @@ Median
 <tr>
 <td align="left">
 <code class="constant">
-mid_range
+mid&#95;range
 </code>
 </td>
 <td align="left">
@@ -11215,7 +11215,7 @@ Mode (most common value)
 <tr>
 <td align="left">
 <code class="constant">
-standard_deviation
+standard&#95;deviation
 </code>
 </td>
 <td align="left">
@@ -11273,7 +11273,7 @@ Appendix&nbsp;F.&nbsp;Grid Mappings
 Each recognized grid mapping is described in one of the sections
 below. Each section contains: the valid name that is used with the
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
 attribute; a list of the specific attributes
 that may be used to assign values to the mapping's parameters;
@@ -11296,7 +11296,7 @@ FGDC
 ]
 as a guide in choosing the values for
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
 and the attribute names for the parameters
 describing map projections.
@@ -11316,9 +11316,9 @@ Example&nbsp;F.1.&nbsp; Albers Equal Area
 </p>
 <pre class="programlisting">
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
-= albers_conical_equal_area
+= albers&#95;conical&#95;equal&#95;area
 </pre>
 <p>
 </p>
@@ -11341,7 +11341,7 @@ Map parameters:
 <li>
 <p>
 <code class="varname">
-standard_parallel
+standard&#95;parallel
 </code>
 - There may be 1 or 2 values.
 </p>
@@ -11349,28 +11349,28 @@ standard_parallel
 <li>
 <p>
 <code class="varname">
-longitude_of_central_meridian
+longitude&#95;of&#95;central&#95;meridian
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-latitude_of_projection_origin
+latitude&#95;of&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_easting
+false&#95;easting
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_northing
+false&#95;northing
 </code>
 </p>
 </li>
@@ -11393,15 +11393,15 @@ Map coordinates:
 The x (abscissa) and y (ordinate) rectangular coordinates
 are identified by the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute values 
 <code class="varname">
-projection_x_coordinate
+projection&#95;x&#95;coordinate
 </code>
 and
 <code class="varname">
-projection_y_coordinate
+projection&#95;y&#95;coordinate
 </code>
 respectively. 
 </p>
@@ -11423,8 +11423,8 @@ PROJ.4
 </code>
 software package for computing the mapping may be found at 
 <span class="link-external">
-<a class="ulink" href="http://www.remotesensing.org/geotiff/proj_list/albers_equal_area_conic.html" target="_top">
-http://www.remotesensing.org/geotiff/proj_list/albers_equal_area_conic.html
+<a class="ulink" href="http://www.remotesensing.org/geotiff/proj&#95;list/albers&#95;equal&#95;area&#95;conic.html" target="&#95;top">
+http://www.remotesensing.org/geotiff/proj&#95;list/albers&#95;equal&#95;area&#95;conic.html
 </a>
 </span>
 .
@@ -11454,9 +11454,9 @@ Example&nbsp;F.2.&nbsp;Azimuthal equidistant
 </p>
 <pre class="programlisting">
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
-= azimuthal_equidistant
+= azimuthal&#95;equidistant
 </pre>
 <p>
 </p>
@@ -11479,28 +11479,28 @@ Map parameters:
 <li>
 <p>
 <code class="varname">
-longitude_of_projection_origin
+longitude&#95;of&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-latitude_of_projection_origin
+latitude&#95;of&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_easting
+false&#95;easting
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_northing
+false&#95;northing
 </code>
 </p>
 </li>
@@ -11523,15 +11523,15 @@ Map coordinates:
 The x (abscissa) and y (ordinate) rectangular coordinates
 are identified by the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute values
 <code class="varname">
-projection_x_coordinate
+projection&#95;x&#95;coordinate
 </code>
 and 
 <code class="varname">
-projection_y_coordinate
+projection&#95;y&#95;coordinate
 </code>
 respectively.
 </p>
@@ -11553,8 +11553,8 @@ PROJ.4
 </code>
 software package for computing the mapping may be found at 
 <span class="link-external">
-<a class="ulink" href="http://www.remotesensing.org/geotiff/proj_list/azimuthal_equidistant.html" target="_top">
-http://www.remotesensing.org/geotiff/proj_list/azimuthal_equidistant.html
+<a class="ulink" href="http://www.remotesensing.org/geotiff/proj&#95;list/azimuthal&#95;equidistant.html" target="&#95;top">
+http://www.remotesensing.org/geotiff/proj&#95;list/azimuthal&#95;equidistant.html
 </a>
 </span>
 .
@@ -11590,9 +11590,9 @@ Example&nbsp;F.3.&nbsp;Lambert azimuthal equal area
 </p>
 <pre class="programlisting">
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
-= lambert_azimuthal_equal_area
+= lambert&#95;azimuthal&#95;equal&#95;area
 </pre>
 <p>
 </p>
@@ -11615,28 +11615,28 @@ Map parameters:
 <li>
 <p>
 <code class="varname">
-longitude_of_projection_origin
+longitude&#95;of&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-latitude_of_projection_origin
+latitude&#95;of&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_easting
+false&#95;easting
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_northing
+false&#95;northing
 </code>
 </p>
 </li>
@@ -11659,15 +11659,15 @@ Map coordinates:
 The x (abscissa) and y (ordinate) rectangular coordinates
 are identified by the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute values
 <code class="varname">
-projection_x_coordinate
+projection&#95;x&#95;coordinate
 </code>
 and 
 <code class="varname">
-projection_y_coordinate
+projection&#95;y&#95;coordinate
 </code>
 respectively.
 </p>
@@ -11689,8 +11689,8 @@ PROJ.4
 </code>
 software package for computing the mapping may be found at 
 <span class="link-external">
-<a class="ulink" href="http://www.remotesensing.org/geotiff/proj_list/lambert_azimuthal_equal_area.html" target="_top">
-http://www.remotesensing.org/geotiff/proj_list/lambert_azimuthal_equal_area.html
+<a class="ulink" href="http://www.remotesensing.org/geotiff/proj&#95;list/lambert&#95;azimuthal&#95;equal&#95;area.html" target="&#95;top">
+http://www.remotesensing.org/geotiff/proj&#95;list/lambert&#95;azimuthal&#95;equal&#95;area.html
 </a>
 </span>
 .
@@ -11720,9 +11720,9 @@ Example&nbsp;F.4.&nbsp;Lambert conformal
 </p>
 <pre class="programlisting">
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
-= lambert_conformal_conic
+= lambert&#95;conformal&#95;conic
 </pre>
 <p>
 </p>
@@ -11745,7 +11745,7 @@ Map parameters:
 <li>
 <p>
 <code class="varname">
-standard_parallel
+standard&#95;parallel
 </code>
 - There may be 1 or 2 values.
 </p>
@@ -11753,28 +11753,28 @@ standard_parallel
 <li>
 <p>
 <code class="varname">
-longitude_of_central_meridian
+longitude&#95;of&#95;central&#95;meridian
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-latitude_of_projection_origin
+latitude&#95;of&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_easting
+false&#95;easting
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_northing
+false&#95;northing
 </code>
 </p>
 </li>
@@ -11797,15 +11797,15 @@ Map coordinates:
 The x (abscissa) and y (ordinate) rectangular coordinates
 are identified by the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute values
 <code class="varname">
-projection_x_coordinate
+projection&#95;x&#95;coordinate
 </code>
 and 
 <code class="varname">
-projection_y_coordinate
+projection&#95;y&#95;coordinate
 </code>
 respectively.
 </p>
@@ -11827,8 +11827,8 @@ PROJ.4
 </code>
 software package for computing the mapping may be found at 
 <span class="link-external">
-<a class="ulink" href="http://www.remotesensing.org/geotiff/proj_list/lambert_conic_conformal_2sp.html" target="_top">
-http://www.remotesensing.org/geotiff/proj_list/lambert_conic_conformal_2sp.html
+<a class="ulink" href="http://www.remotesensing.org/geotiff/proj&#95;list/lambert&#95;conic&#95;conformal&#95;2sp.html" target="&#95;top">
+http://www.remotesensing.org/geotiff/proj&#95;list/lambert&#95;conic&#95;conformal&#95;2sp.html
 </a>
 </span>
 .
@@ -11856,9 +11856,9 @@ Example&nbsp;F.5.&nbsp;Polar stereographic
 </p>
 <pre class="programlisting">
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
-= polar_stereographic
+= polar&#95;stereographic
 </pre>
 <p>
 </p>
@@ -11881,14 +11881,14 @@ Map parameters:
 <li>
 <p>
 <code class="varname">
-straight_vertical_longitude_from_pole
+straight&#95;vertical&#95;longitude&#95;from&#95;pole
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-latitude_of_projection_origin
+latitude&#95;of&#95;projection&#95;origin
 </code>
 - Either +90. or -90.
 </p>
@@ -11897,25 +11897,25 @@ latitude_of_projection_origin
 <p>
 Either 
 <code class="varname">
-standard_parallel
+standard&#95;parallel
 </code>
 or 
 <code class="varname">
-scale_factor_at_projection_origin
+scale&#95;factor&#95;at&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_easting
+false&#95;easting
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_northing
+false&#95;northing
 </code>
 </p>
 </li>
@@ -11938,15 +11938,15 @@ Map coordinates:
 The x (abscissa) and y (ordinate) rectangular coordinates
 are identified by the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute values
 <code class="varname">
-projection_x_coordinate
+projection&#95;x&#95;coordinate
 </code>
 and 
 <code class="varname">
-projection_y_coordinate
+projection&#95;y&#95;coordinate
 </code>
 respectively.
 </p>
@@ -11968,8 +11968,8 @@ PROJ.4
 </code>
 software package for computing the mapping may be found at 
 <span class="link-external">
-<a class="ulink" href="http://www.remotesensing.org/geotiff/proj_list/polar_stereographic.html" target="_top">
-http://www.remotesensing.org/geotiff/proj_list/polar_stereographic.html
+<a class="ulink" href="http://www.remotesensing.org/geotiff/proj&#95;list/polar&#95;stereographic.html" target="&#95;top">
+http://www.remotesensing.org/geotiff/proj&#95;list/polar&#95;stereographic.html
 </a>
 </span>
 .
@@ -11997,9 +11997,9 @@ Example&nbsp;F.6.&nbsp;Rotated pole
 </p>
 <pre class="programlisting">
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
-= rotated_latitude_longitude
+= rotated&#95;latitude&#95;longitude
 </pre>
 <p>
 </p>
@@ -12022,21 +12022,21 @@ Map parameters:
 <li>
 <p>
 <code class="varname">
-grid_north_pole_latitude
+grid&#95;north&#95;pole&#95;latitude
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-grid_north_pole_longitude
+grid&#95;north&#95;pole&#95;longitude
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-north_pole_grid_longitude
+north&#95;pole&#95;grid&#95;longitude
 </code>
 - This parameter is option (default is 0).
 </p>
@@ -12060,15 +12060,15 @@ Map coordinates:
 The rotated latitude and longitude coordinates
 are identified by the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute values
 <code class="varname">
-grid_latitude
+grid&#95;latitude
 </code>
 and 
 <code class="varname">
-grid_longitude
+grid&#95;longitude
 </code>
 respectively.
 </p>
@@ -12108,7 +12108,7 @@ Example&nbsp;F.7.&nbsp;Stereographic
 </p>
 <pre class="programlisting">
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
 = stereographic
 </pre>
@@ -12133,35 +12133,35 @@ Map parameters:
 <li>
 <p>
 <code class="varname">
-longitude_of_projection_origin
+longitude&#95;of&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-latitude_of_projection_origin
+latitude&#95;of&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-scale_factor_at_projection_origin
+scale&#95;factor&#95;at&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_easting
+false&#95;easting
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_northing
+false&#95;northing
 </code>
 </p>
 </li>
@@ -12184,15 +12184,15 @@ Map coordinates:
 The x (abscissa) and y (ordinate) rectangular coordinates
 are identified by the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute values 
 <code class="varname">
-projection_x_coordinate
+projection&#95;x&#95;coordinate
 </code>
 and 
 <code class="varname">
-projection_y_coordinate
+projection&#95;y&#95;coordinate
 </code>
 respectively.
 </p>
@@ -12214,8 +12214,8 @@ PROJ.4
 </code>
 software package for doing the calcuations may be found at 
 <span class="link-external">
-<a class="ulink" href="http://www.remotesensing.org/geotiff/proj_list/stereographic.html" target="_top">
-http://www.remotesensing.org/geotiff/proj_list/stereographic.html
+<a class="ulink" href="http://www.remotesensing.org/geotiff/proj&#95;list/stereographic.html" target="&#95;top">
+http://www.remotesensing.org/geotiff/proj&#95;list/stereographic.html
 </a>
 </span>
 . See the section "Polar stereographic" for the special case when the projection origin is one of the poles.
@@ -12243,9 +12243,9 @@ Example&nbsp;F.8.&nbsp;Transverse Mercator
 </p>
 <pre class="programlisting">
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
-= transverse_mercator
+= transverse&#95;mercator
 </pre>
 <p>
 </p>
@@ -12268,35 +12268,35 @@ Map parameters:
 <li>
 <p>
 <code class="varname">
-scale_factor_at_central_meridian
+scale&#95;factor&#95;at&#95;central&#95;meridian
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-longitude_of_central_meridian
+longitude&#95;of&#95;central&#95;meridian
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-latitude_of_projection_origin
+latitude&#95;of&#95;projection&#95;origin
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_easting
+false&#95;easting
 </code>
 </p>
 </li>
 <li>
 <p>
 <code class="varname">
-false_northing
+false&#95;northing
 </code>
 </p>
 </li>
@@ -12319,15 +12319,15 @@ Map coordinates:
 The x (abscissa) and y (ordinate) rectangular coordinates
 are identified by the 
 <code class="varname">
-standard_name
+standard&#95;name
 </code>
 attribute values 
 <code class="varname">
-projection_x_coordinate
+projection&#95;x&#95;coordinate
 </code>
 and 
 <code class="varname">
-projection_y_coordinate
+projection&#95;y&#95;coordinate
 </code>
 respectively.
 </p>
@@ -12349,8 +12349,8 @@ PROJ.4
 </code>
 software package for doing the calcuations may be found at 
 <span class="link-external">
-<a class="ulink" href="http://www.remotesensing.org/geotiff/proj_list/transverse_mercator.html" target="_top">
-http://www.remotesensing.org/geotiff/proj_list/transverse_mercator.html
+<a class="ulink" href="http://www.remotesensing.org/geotiff/proj&#95;list/transverse&#95;mercator.html" target="&#95;top">
+http://www.remotesensing.org/geotiff/proj&#95;list/transverse&#95;mercator.html
 </a>
 </span>
 .
@@ -12395,7 +12395,7 @@ Description
 <tr>
 <td align="left">
 <code class="varname">
-false_easting
+false&#95;easting
 </code>
 </td>
 <td align="left">
@@ -12405,7 +12405,7 @@ is assigned to eliminate negative numbers. Expressed in
 the unit of the coordinate variable identified by the
 standard name 
 <code class="varname">
-projection_x_coordinate
+projection&#95;x&#95;coordinate
 </code>
 .
 </td>
@@ -12413,7 +12413,7 @@ projection_x_coordinate
 <tr>
 <td align="left">
 <code class="varname">
-false_northing
+false&#95;northing
 </code>
 </td>
 <td align="left">
@@ -12423,7 +12423,7 @@ is assigned to eliminate negative numbers. Expressed in
 the unit of the coordinate variable identified by the
 standard name 
 <code class="varname">
-projection_y_coordinate
+projection&#95;y&#95;coordinate
 </code>
 .
 </td>
@@ -12431,7 +12431,7 @@ projection_y_coordinate
 <tr>
 <td align="left">
 <code class="varname">
-grid_mapping_name
+grid&#95;mapping&#95;name
 </code>
 </td>
 <td align="left">
@@ -12441,69 +12441,69 @@ The name used to identify the grid mapping.
 <tr>
 <td align="left">
 <code class="varname">
-grid_north_pole_latitude
+grid&#95;north&#95;pole&#95;latitude
 </code>
 </td>
 <td align="left">
-True latitude (degrees_north) of the north pole of the rotated grid.
+True latitude (degrees&#95;north) of the north pole of the rotated grid.
 </td>
 </tr>
 <tr>
 <td align="left">
 <code class="varname">
-grid_north_pole_longitude
+grid&#95;north&#95;pole&#95;longitude
 </code>
 </td>
 <td align="left">
-True longitude (degrees_east) of the north pole of the rotated grid.
+True longitude (degrees&#95;east) of the north pole of the rotated grid.
 </td>
 </tr>
 <tr>
 <td align="left">
 <code class="varname">
-latitude_of_projection_origin
+latitude&#95;of&#95;projection&#95;origin
 </code>
 </td>
 <td align="left">
 The latitude chosen as the origin of rectangular coordinates for a map projection.
 Domain: 
 <code class="varname">
--90.0 &lt;= latitude_of_projection_origin &lt;= 90.0
+-90.0 &lt;= latitude&#95;of&#95;projection&#95;origin &lt;= 90.0
 </code>
 </td>
 </tr>
 <tr>
 <td align="left">
 <code class="varname">
-longitude_of_central_meridian
+longitude&#95;of&#95;central&#95;meridian
 </code>
 </td>
 <td align="left">
 The line of longitude at the center of a map projection generally used as the basis for constructing the projection. 
 Domain: 
 <code class="varname">
--180.0 &lt;= longitude_of_central_meridian &lt; 180.0
+-180.0 &lt;= longitude&#95;of&#95;central&#95;meridian &lt; 180.0
 </code>
 </td>
 </tr>
 <tr>
 <td align="left">
 <code class="varname">
-longitude_of_projection_origin
+longitude&#95;of&#95;projection&#95;origin
 </code>
 </td>
 <td align="left">
 The longitude chosen as the origin of rectangular coordinates for a map projection.
 Domain: 
 <code class="varname">
--180.0 &lt;= longitude_of_projection_origin &lt; 180.0
+-180.0 &lt;= longitude&#95;of&#95;projection&#95;origin &lt; 180.0
 </code>
 </td>
 </tr>
 <tr>
 <td align="left">
 <code class="varname">
-north_pole_grid_longitude
+north&#95;pole&#95;grid&#95;longitude
 </code>
 </td>
 <td align="left">
@@ -12513,7 +12513,7 @@ Longitude (degrees) of the true north pole in the rotated grid.
 <tr>
 <td align="left">
 <code class="varname">
-scale_factor_at_central_meridian
+scale&#95;factor&#95;at&#95;central&#95;meridian
 </code>
 </td>
 <td align="left">
@@ -12522,14 +12522,14 @@ computation or scaling to the actual distance along the
 central meridian.
 Domain: 
 <code class="varname">
-scale_factor_at_central_meridian &gt; 0.0
+scale&#95;factor&#95;at&#95;central&#95;meridian &gt; 0.0
 </code>
 </td>
 </tr>
 <tr>
 <td align="left">
 <code class="varname">
-scale_factor_at_projection_origin
+scale&#95;factor&#95;at&#95;projection&#95;origin
 </code>
 </td>
 <td align="left">
@@ -12538,14 +12538,14 @@ a map by computation or scaling to the actual distance
 at the projection origin.
 Domain: 
 <code class="varname">
-scale_factor_at_projection_origin &gt; 0.0
+scale&#95;factor&#95;at&#95;projection&#95;origin &gt; 0.0
 </code>
 </td>
 </tr>
 <tr>
 <td align="left">
 <code class="varname">
-standard_parallel
+standard&#95;parallel
 </code>
 </td>
 <td align="left">
@@ -12555,21 +12555,21 @@ This attribute may be vector valued if two standard
 parallels are specified.
 Domain: 
 <code class="varname">
--90.0 &lt;= standard_parallel &lt;= 90.0
+-90.0 &lt;= standard&#95;parallel &lt;= 90.0
 </code>
 </td>
 </tr>
 <tr>
 <td align="left">
 <code class="varname">
-straight_vertical_longitude_from_pole
+straight&#95;vertical&#95;longitude&#95;from&#95;pole
 </code>
 </td>
 <td align="left">
 The longitude to be oriented straight up from the North or South Pole.
 Domain: 
 <code class="varname">
--180.0 &lt;= straight_vertical_longitude_from_pole &lt; 180.0
+-180.0 &lt;= straight&#95;vertical&#95;longitude&#95;from&#95;pole &lt; 180.0
 </code>
 </td>
 </tr>
@@ -12632,7 +12632,7 @@ Example&nbsp;F.5, “Polar stereographic”
 </a>
 : Added 
 <code class="varname">
-latitude_of_projection_origin
+latitude&#95;of&#95;projection&#95;origin
 </code>
 map parameter.
 </p>
@@ -12706,7 +12706,7 @@ Section&nbsp;7.3, “Cell Methods”
 </code>
 to 
 <code class="varname">
-"standard_deviation"
+"standard&#95;deviation"
 </code>
 .
 </p>
@@ -12899,7 +12899,7 @@ COARDS
 <span class="title">
 <i>
 <span class="link-external">
-<a class="ulink" href="http://ferret.wrc.noaa.gov/noaa_coop/coop_cdf_profile.html" target="_top">
+<a class="ulink" href="http://ferret.wrc.noaa.gov/noaa&#95;coop/coop&#95;cdf&#95;profile.html" target="&#95;top">
 Conventions for the standardization of NetCDF Files
 </a>
 </span>
@@ -12935,7 +12935,7 @@ FGDC
 <span class="title">
 <i>
 <span class="link-external">
-<a class="ulink" href="http://www.fgdc.gov/standards/projects/FGDC-standards-projects/metadata/base-metadata/v2_0698.pdf" target="_top">
+<a class="ulink" href="http://www.fgdc.gov/standards/projects/FGDC-standards-projects/metadata/base-metadata/v2&#95;0698.pdf" target="&#95;top">
 Content Standard for Digital Geospatial Metadata
 </a>
 </span>
@@ -12962,7 +12962,7 @@ NetCDF
 <span class="title">
 <i>
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/index.html" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/index.html" target="&#95;top">
 NetCDF Software Package
 </a>
 </span>
@@ -12989,7 +12989,7 @@ NUG
 <span class="title">
 <i>
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/netcdf/guidef/" target="&#95;top">
 NetCDF User's Guide for Fortran:  An Access Interface for Self-Describing Portable Data; version 3
 </a>
 </span>
@@ -13097,7 +13097,7 @@ UDUNITS
 <span class="title">
 <i>
 <span class="link-external">
-<a class="ulink" href="http://www.unidata.ucar.edu/packages/udunits/" target="_top">
+<a class="ulink" href="http://www.unidata.ucar.edu/packages/udunits/" target="&#95;top">
 UDUNITS Software Package
 </a>
 </span>
@@ -13124,7 +13124,7 @@ W3C
 <span class="title">
 <i>
 <span class="link-external">
-<a class="ulink" href="http://www.w3.org/" target="_top">
+<a class="ulink" href="http://www.w3.org/" target="&#95;top">
 World Wide Web Consortium (W3C)
 </a>
 </span>
@@ -13145,7 +13145,7 @@ XML
 <span class="title">
 <i>
 <span class="link-external">
-<a class="ulink" href="http://www.w3.org/TR/1998/REC-xml-19980210" target="_top">
+<a class="ulink" href="http://www.w3.org/TR/1998/REC-xml-19980210" target="&#95;top">
 Extensible Markup Language (XML) 1.0
 </a>
 </span>
