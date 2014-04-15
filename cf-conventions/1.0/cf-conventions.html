@@ -4468,7 +4468,7 @@ n
 is a time index:
 </p>
 <pre class="programlisting">
-p(n,k,j,i) = ptop + sigma(k)*(ps(n,j,i)-ptop)
+p(n,k,j,i) = ptop + sigma(k)&#42;(ps(n,j,i)-ptop)
 </pre>
 <p>
 </p>
@@ -4508,7 +4508,7 @@ ptop
 would be calculated by
 </p>
 <pre class="programlisting">
-p(n,k,j,i) = PTOP + lev(k)*(PS(n,j,i)-PTOP)
+p(n,k,j,i) = PTOP + lev(k)&#42;(PS(n,j,i)-PTOP)
 </pre>
 <p>
 </p>
@@ -4992,7 +4992,7 @@ is  actually  approximately 365.242198781 days long.)  Seem-
 ingly strange behavior of the udunits(3) package can  result
 if  a user-given time interval includes the changeover date.
 For example, utCalendar() and utInvCalendar() can be used to
-show that 1582-10-15 *preceded* 1582-10-14 by 9 days.
+show that 1582-10-15 &#42;preceded&#42; 1582-10-14 by 9 days.
 </pre>
 <p>
 </p>
@@ -5497,7 +5497,7 @@ to 2D index
 </p>
 <pre class="programlisting">
 j = rgrid(n) / 128
-i = rgrid(n) - 128*j
+i = rgrid(n) - 128&#42;j
 </pre>
 <p>
 </p>
@@ -8304,7 +8304,7 @@ landpoint(0)=363
 , 
 for instance, we know that 
 <code class="computeroutput">
-landsoilt(*,0)
+landsoilt(&#42;,0)
 </code>
 maps on to point 363 of the original data with dimensions 
 <code class="computeroutput">
@@ -8318,7 +8318,7 @@ This corresponds to indices
 , 
 i.e., 
 <code class="computeroutput">
-363 = 3*96 + 75
+363 = 3&#42;96 + 75
 </code>
 . 
 </p>
@@ -9909,7 +9909,7 @@ Definition:
 </dt>
 <dd>
 <pre class="programlisting">
-p(k) = p0 * exp(-lev(k))
+p(k) = p0 &#42; exp(-lev(k))
 </pre>
 </dd>
 </dl>
@@ -9991,7 +9991,7 @@ Definition:
 </dt>
 <dd>
 <pre class="programlisting">
-p(n,k,j,i) = ptop + sigma(k)*(ps(n,j,i)-ptop)
+p(n,k,j,i) = ptop + sigma(k)&#42;(ps(n,j,i)-ptop)
 </pre>
 </dd>
 </dl>
@@ -10080,13 +10080,13 @@ Definition:
 </dt>
 <dd>
 <pre class="programlisting">
-p(n,k,j,i) = a(k)*p0 + b(k)*ps(n,j,i)
+p(n,k,j,i) = a(k)&#42;p0 + b(k)&#42;ps(n,j,i)
 </pre>
 <p>
 or 
 </p>
 <pre class="programlisting">
-p(n,k,j,i) = ap(k) + b(k)*ps(n,j,i)
+p(n,k,j,i) = ap(k) + b(k)&#42;ps(n,j,i)
 </pre>
 </dd>
 </dl>
@@ -10228,12 +10228,12 @@ Definition:
 <dd>
 <pre class="programlisting">
 <span class="deletedtext">
-z(n,k,j,i) = tau(k)*zsurface(n,j,i) + eta(k)*ztop
+z(n,k,j,i) = tau(k)&#42;zsurface(n,j,i) + eta(k)&#42;ztop
 </span>
 </pre>
 <pre class="programlisting">
 <span class="newtext">
-z(n,k,j,i) = a(k) + b(k)*orog(n,j,i)
+z(n,k,j,i) = a(k) + b(k)&#42;orog(n,j,i)
 </span>
 </pre>
 </dd>
@@ -10357,7 +10357,7 @@ k
 </code>
 is defined as 
 <code class="varname">
-eta(k)*ztop
+eta(k)&#42;ztop
 </code>
 .
 </span>
@@ -10405,7 +10405,7 @@ Definition:
 </dt>
 <dd>
 <pre class="programlisting">
-z(n,k,j,i) = a(k)*ztop + b1(k)*zsurf1(n,j,i) + b2(k)*zsurf2(n,j,i)
+z(n,k,j,i) = a(k)&#42;ztop + b1(k)&#42;zsurf1(n,j,i) + b2(k)&#42;zsurf2(n,j,i)
 </pre>
 </dd>
 </dl>
@@ -10485,7 +10485,7 @@ k
 </code>
 is defined as
 <code class="varname">
-a(k)*ztop
+a(k)&#42;ztop
 </code>
 .
 </p>
@@ -10524,7 +10524,7 @@ Definition:
 </dt>
 <dd>
 <pre class="programlisting">
-z(n,k,j,i) = eta(n,j,i) + sigma(k)*(depth(j,i)+eta(n,j,i))
+z(n,k,j,i) = eta(n,j,i) + sigma(k)&#42;(depth(j,i)+eta(n,j,i))
 </pre>
 </dd>
 </dl>
@@ -10619,10 +10619,10 @@ Definition:
 </dt>
 <dd>
 <pre class="programlisting">
-z(n,k,j,i) = eta(n,j,i)*(1+s(k)) + depth&#95;c*s(k) +
-(depth(j,i)-depth&#95;c)*C(k)
-C(k) = (1-b)*sinh(a*s(k))/sinh(a) + 
-b*[tanh(a*(s(k)+0.5))/(2*tanh(0.5*a)) - 0.5]
+z(n,k,j,i) = eta(n,j,i)&#42;(1+s(k)) + depth&#95;c&#42;s(k) +
+(depth(j,i)-depth&#95;c)&#42;C(k)
+C(k) = (1-b)&#42;sinh(a&#42;s(k))/sinh(a) + 
+b&#42;[tanh(a&#42;(s(k)+0.5))/(2&#42;tanh(0.5&#42;a)) - 0.5]
 </pre>
 </dd>
 </dl>
@@ -10731,7 +10731,7 @@ Definition:
 <dd>
 <pre class="programlisting">
 for k &lt;= nsigma:
-z(n,k,j,i) = eta(n,j,i) + sigma(k)*(min(depth&#95;c,depth(j,i))+eta(n,j,i))
+z(n,k,j,i) = eta(n,j,i) + sigma(k)&#42;(min(depth&#95;c,depth(j,i))+eta(n,j,i))
 for k &gt; nsigma:
 z(n,k,j,i) = zlev(k)
 </pre>
@@ -10843,10 +10843,10 @@ Definition:
 <dd>
 <pre class="programlisting">
 for k &lt;= k&#95;c
-z(k,j,i)= sigma(k)*f(j,i)
+z(k,j,i)= sigma(k)&#42;f(j,i)
 for k &gt; k&#95;c
-z(k,j,i)= f(j,i) + (sigma(k)-1)*(depth(j,i)-f(j,i))
-f(j,i)= 0.5*(z1+ z2) + 0.5*(z1-z2)* tanh(2*a/(z1-z2)*(depth(j,i)-href))
+z(k,j,i)= f(j,i) + (sigma(k)-1)&#42;(depth(j,i)-f(j,i))
+f(j,i)= 0.5&#42;(z1+ z2) + 0.5&#42;(z1-z2)&#42; tanh(2&#42;a/(z1-z2)&#42;(depth(j,i)-href))
 </pre>
 </dd>
 </dl>
