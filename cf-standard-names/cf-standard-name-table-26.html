@@ -86,7 +86,7 @@ Search
 </h2>
 <form id="filter_form" name="filter_form" style="margin: 0px; padding: 0px;" action="javascript:void(0);">
 <table border="0" cellpadding="2" cellspacing="1">
-<tbody>
+
 <tr>
 <td valign="top">
 <input id="filter_text" name="filter_text" size="40" onkeydown="if (event.keyCode==13) applyFilter(document.getElementById('filter_text').value);" type="text">
@@ -111,7 +111,7 @@ Also search help text
 </label>
 </td>
 </tr>
-</tbody>
+
 </table>
 </form>
 <div id="filter_matches" style="visibility: hidden; margin-bottom: 10px;">
@@ -126,7 +126,7 @@ standard names matching query:
 View by Category
 </h2>
 <table border="1" cellpadding="4" cellspacing="0">
-<tbody>
+
 <tr>
 <td>
 <a href="javascript:void(0)" onclick="document.getElementById('filter_text').value='aerosol dry.*deposition wet.*deposition production emission mole';                                 document.getElementById('logical_operator_or').click();                                 document.getElementById('btn_search').onclick();">
@@ -176,24 +176,24 @@ Surface
 </a>
 </td>
 </tr>
-</tbody>
+
 </table>
 </div>
+
 <table id="standard_name_table" border="1" cellpadding="2" cellspacing="0" width="100%">
-<tbody>
 <tr>
-<th width="76%">
+<td width="76%">
 Standard Name
-</th>
-<th width="8%">
+</td>
+<td width="8%">
 Canonical Units
-</th>
-<th width="8%">
+</td>
+<td width="8%">
 AMIP
-</th>
-<th width="8%">
+</td>
+<td width="8%">
 GRIB
-</th>
+</td>
 </tr>
 <tr id="age_of_sea_ice_tr">
 <td>
@@ -80085,5 +80085,5 @@ degree
 <td>
 </td>
 </tr>
-</tbody>
+
 </table>
